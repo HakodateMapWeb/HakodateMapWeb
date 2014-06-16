@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+body {
+	background: #FFAAAA;
+	color: #660000;
+	margin: 0;
+}
+#site-box{
+	
+}
+#header{
+	font-size: 14pt;
+	font-weight: bold
+}
+#content{
+	background: #FFEEEE;
+	color: #990000;
+	padding: 10px 20px 40px 20px;
+}
+#footer{
+	text-align: right;
+}
