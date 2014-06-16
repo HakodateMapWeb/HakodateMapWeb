@@ -222,12 +222,12 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'GOOGLEMAPAPIHANABUSADOUJI');
+	Configure::write('Security.salt', 'HAKODATEMAPWEB');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '46440908');
+	Configure::write('Security.cipherSeed', '101015310111371013120');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
