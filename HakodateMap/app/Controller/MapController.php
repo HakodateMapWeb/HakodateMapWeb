@@ -2,6 +2,7 @@
 class MapController extends AppController {
 	public $name = 'Map';
 	public $uses = null;
+	// test
 	// public $autoLayout;
 	// public $autoRender;
 	public $layout = "Map";
