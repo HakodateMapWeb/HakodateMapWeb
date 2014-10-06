@@ -1,10 +1,18 @@
+<?php $this->Html->scriptStart(array('inline' => false)); ?>
+function getWidthSize(){
+alert(screen.Width);
+}
+function getHeightSize(){
+alert(screen.Height);
+}
+<?php $this->Html->scriptEnd(); ?>
 <?php echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true', false); ?>
 <?php
 
 $map_options = array (
 		// 'id' => '',
-		// 'width' => '800px',
-		// 'height' => '800px',
+		'width' => "javascript:getWidthSize();",
+		//'height' => "javascript:getHeightSize();",
 		// 'style' => '',
 		'zoom' => 15,
 		'type' => 'ROADMAP',
@@ -28,9 +36,6 @@ $map_options = array (
 <title>sampleMap</title>
 </head>
 <body>
-	<h1>これは地図なのか…</h1>
-	<p>え…</p>
 	<?php echo $this->GoogleMap->map($map_options); ?>
-	<?php echo date('Y/m/d', time());?>
 </body>
 </html>
