@@ -3,6 +3,7 @@ body {
 	background: #ffffff;
 	color: #666600;
 	margin: 0;
+	
 }
 #site-box{
 	
@@ -14,7 +15,8 @@ body {
 #content{
 	background: #FFEEEE;
 	color: #990000;
-	padding: 10px 20px 40px 20px;
+	margin: 0 0 0; 
+	padding: 0px 0px 0px 0px;
 }
 #footer{
 	text-align: right;

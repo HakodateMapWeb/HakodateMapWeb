@@ -12,9 +12,9 @@ echo $scripts_for_layout;
 </head>
 <body>
 	<div id="site-box">
-		<div id="header">** Header **</div>
+		
 		<div id="content"><?php echo $content_for_layout; ?></div>
-		<div id="footer">** this is set. **</div>
+		
 	</div>
 </body>
 </html>
