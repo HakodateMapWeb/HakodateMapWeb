@@ -9,7 +9,7 @@ class MapController extends AppController {
 	// public $helpers = array('GoogleMap'); // Adding the helper
 	public function index() {
 		// $this->autoLayout = true;
-		 $this->autoRender = true;
+		//$this->autoRender = true;
 		// $this->setAction("other");
 		// $this->redirect("./other");
 		 echo "<html><head></head><body>";

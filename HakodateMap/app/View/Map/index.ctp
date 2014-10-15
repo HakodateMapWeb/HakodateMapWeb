@@ -1,18 +1,11 @@
-<?php $this->Html->scriptStart(array('inline' => false)); ?>
-function getWidthSize(){
-alert(screen.Width);
-}
-function getHeightSize(){
-alert(screen.Height);
-}
-<?php $this->Html->scriptEnd(); ?>
+
 <?php echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true', false); ?>
 <?php
 
 
 $map_options = array (
 		// 'id' => '',
-		'width' => "javascript:getWidthSize();",
+		'width' => '100%',
 		'height' => '100%',
 		// 'style' => '',
 		'zoom' => 15,
