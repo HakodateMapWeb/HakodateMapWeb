@@ -2,7 +2,6 @@
 <?php echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true', false); ?>
 <?php
 
-
 $map_options = array (
 		// 'id' => '',
 		'width' => '100%',
@@ -16,6 +15,7 @@ $map_options = array (
     			     position: google.maps.ControlPosition.LEFT_CENTER
     				},
 					panControl: false,
+					mapTypeControl: false,
 			    	mapTypeControlOptions: {
       			    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
        				position: google.maps.ControlPosition.TOP_CENTER
@@ -37,27 +37,79 @@ $map_options = array (
 <html lang="ja">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>sampleMap</title>
+<title>sampleMap</title> 
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+<style>
+	#sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+	#sortable li { margin: 3px 3px 0 5px; padding: 0px; float: left; width: 100px; height: 60px; font-size: 3em; text-align: center; }
+</style>
+
+ <script>
+	$(function() {
+	$( "#sortable" ).sortable({ axis: 'x', containment : 'parent',  cursor : 'move', cursorAt : { left : 50, top: 30}  });
+	$( "#sortable" ).disableSelection();
+	});
+</script>
+
 </head>
 <body>
 	<?php echo $this->GoogleMap->map($map_options); ?>
-	<div style="position:absolute; left:0px; bottom:0px; width: 100%; height:70px; background-color:#4169e1;">
-	<font size="5" color="#ffffff">TEST</font>
+
+	<div class="cake.map effect2" style="position:absolute; left:0px; bottom:0px; width: 100%; height:70px; background-color:rgba(30, 144, 255, 0.6);">
+
+		<ul id="sortable" class="ui-sortable">
+			<li class="ui-state-default ui-sortable-handle">1</li>
+			<li class="ui-state-default ui-sortable-handle">2</li>
+			<li class="ui-state-default ui-sortable-handle">3</li>
+			<li class="ui-state-default ui-sortable-handle">4</li>
+			<li class="ui-state-default ui-sortable-handle">5</li>
+			<li class="ui-state-default ui-sortable-handle">6</li>
+			<li class="ui-state-default ui-sortable-handle">7</li>
+			<li class="ui-state-default ui-sortable-handle">8</li>
+		</ul>
+
 	</div>
-	
-	<div style="position:absolute; left:20px; top:20px;">
+
+	<div class="cake.map effect3-1" style="position:absolute; left:-140px; top:47px; width:320px; height: 8px; background-color:rgba(0, 144, 255, 0.6);"> </div>
+
+	<div class="cake.map effect3" style="position:absolute; left:0px; top:20px; padding: 3px 3px 3px 40px; background-color:rgba(255, 255, 255, 0.8);">
+
 		<input type="text" name="example1">
-		<select>
-          <option>----TEST----</option>
-          <option>test1</option>
-          <option>test2</option>
-        </select>
-        <input type="submit" value="検　索">
+
+		<SELECT name="genre">
+			<OPTION value="0">----TEST----</OPTION>
+			<OPTION value="1">1?</OPTION>
+			<OPTION value="2">2?</OPTION>
+			<OPTION value="3">3?</OPTION>
+		</SELECT>
+
+		<input type="submit" value="検　索">
+
+		<div class="kage" style="position:absolute; left: 90px; top: -20px; "><font color="#fff" size = 5>Hakodate Map +</font></div>
+
 	</div>
-	
-	<div style="position:absolute; right:20px; bottom:85px; width: 200px; height:80%; background-color:#5bc3e5;">
-	<font size="5" color="#ffffff">TEST------</font>
+
+	<div class="cake.map effect3-1" style="position:absolute; left:-160px; top:47px; width:320px; height: 8px; background-color:rgba(0, 212, 255, 0.8);"> </div>
+
+	<div class="cake.map effect1" style="position:absolute; right:20px; bottom:95px; width: 200px; height:80%; background-color:rgba(255, 255, 255, 1);">
+
+	  	<div class="TAB">
+		    <input name="s3" id="select1" value="1" checked="" type="radio">
+		    <label for="select1">TEST1</label>
+		    <input name="s3" id="select2" value="2" type="radio">
+		    <label for="select2">TEST2</label>
+		</div>
+
 	</div>
-    
+
 </body>
 </html>
