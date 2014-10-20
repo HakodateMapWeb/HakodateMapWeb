@@ -6,7 +6,7 @@
 		<li class="gnav03"><a
 			href="/cake/HakodateMapWeb/HakodateMap/Web/courselist"
 			>コースリスト（仮）</a></li>
-		<li class="gnav04"><a href="#">マップ（仮）</a></li>
+		<li class="gnav04"><a href="/cake/HakodateMapWeb/HakodateMap/Map">マップ（仮）</a></li>
 	</ul>
 </div>
 <!-- /gnav -->
