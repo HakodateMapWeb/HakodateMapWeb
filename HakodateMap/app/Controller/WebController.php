@@ -12,7 +12,19 @@ class WebController extends AppController {
         //echo "え";
     }
     
-    public function other() {
+    public function home() {
+    	//$this -> autoLayout = false;
+    	//$this -> autoRender = true;
+    	//echo "え";
+    }
+    
+    public function about() {
+    	//$this -> autoLayout = false;
+    	//$this -> autoRender = true;
+    	//echo "え";
+    }
+    
+    public function courselist() {
     	//$this -> autoLayout = false;
     	//$this -> autoRender = true;
     	//echo "え";
