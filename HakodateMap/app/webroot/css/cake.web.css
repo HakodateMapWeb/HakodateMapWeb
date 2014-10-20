@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+/*リセットCSS + サイト共通設定*/
+
+/*全ての要素に対する余白初期値設定*/
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, li, table, th, td,
+	form, select, option, input
+address, pre, strong, em, iframe, img{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: 0;
+}
+
+/*デフォルト文字設定*/
+body{
+	color: #666666;
+	font-family: sans-serif;
+	font-size: 13px;
+	*font-size: small;
+	line-height: 1.4;
+}
+
+/*リストマーカーを非表示*/
+ul, ol{
+	list-style-type: none;
+}
+
+/*テーブルセルのボーダーの設定*/
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*画像とフォームパーツの上下位置をテキストの真ん中に*/
+img, input, select, textarea{
+	vertical-align: middle;
+}
+
+/*デフォルトリンク色の設定*/
+a{
+	color: #00C4AB;
+}
+
+a:hover{
+	color: #CCE739;
+}
+
+/*画像リンクの設定*/
+a img{
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+a:hover img{
+	opacity: 0.7;
+	filter: alpha(opacity = 75);
+}
+
+/*clearfix*/
+.clearfix:after{/*for modern browser*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+* html .clearfix{
+	zoom: 1;
+}/*for IE6*/
+*:first-child+html .clearfix{
+	zoom: 1;
+}/*for IE7*/
+
+/*Layout*/
+body {
+	border-top: #cce739 5px solid;
+}
+
+/*Header*/
+#header {
+	padding: 10px 0;
+	border-top: #00c4ab 5px solid;
+	background: #00c4ab;
+	/*background:url() #e6e6e6;*/
+	/*font-size: 14pt;*/
+	/*font-weight: bold*/
+}
+
+#header .inner {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*GlobalNavigation*/
+#gnav {
+	background: #00c4ab;
+}
+
+#gnav ul {
+	width: 940px;
+	margin: 0 auto;
+	border-right: #fff 1px solid;
+	overflow: hidden;
+}
+
+#gnav li {
+	float: left;
+	width: 233px;
+	border-left: #fff 1px solid;
+}
+
+#gnav li.gnav01 {
+	widht: 235px;
+}
+
+#gnav a {
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+#gnav a:hover {
+	background: #cce739;
+}
+
+#gnav a.selected {
+	background: #fff;
+	color: #00c4ab;
+	font-weight: bold;
+}
+
+#content {
+	background: #FFEEEE;
+	color: #990000;
+	margin: 0 0 0;
+	padding: 10px 20px 40px 20px;
+}
+
+/*Footer*/
+#footer {
+	padding: 10px 0;
+	background: #e6e6e6;
+	/*text-align: right;*/
+}
+
+#footer .inner {
+	width: 940px;
+	margin: 0 auto;
+}
