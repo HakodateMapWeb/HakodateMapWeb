@@ -10,6 +10,7 @@ class MapController extends AppController {
 	//public $autoRender;
 	public $layout = "Map";
 	// public $helpers = array('GoogleMap'); // Adding the helper
+	
 	public function index() {
 		// $this->autoLayout = true;
 		//$this->autoRender = true;
@@ -19,11 +20,13 @@ class MapController extends AppController {
 		 echo "<p></p>";
 		 echo "</body></html>";
 		//$this->set("title_for_layout","Index Page");
-		$url = MapController::querySpotName("五稜郭");
-		$searchResult = MapController::runQuery($url);
-		$spotList = array();
-		$spotList = MapController::parse($searchResult);
-		$this->set('spotList',$spotList);
+		if(isset($this->data["spotName"])){
+			$url = MapController::querySpotName($this->data["spotName"]);
+			$searchResult = MapController::runQuery($url);
+			$spotList = array();
+			$spotList = MapController::parse($searchResult);
+			$this->set('spotList',$spotList);
+		}
 	}
 	
 	public function other() {

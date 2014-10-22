@@ -87,8 +87,9 @@ $map_options = array (
 	<div class="cake.map effect3-1" style="position:absolute; left:-140px; top:47px; width:320px; height: 8px; background-color:rgba(0, 144, 255, 0.6);"> </div>
 
 	<div class="cake.map effect3" style="position:absolute; left:0px; top:20px; padding: 3px 3px 3px 40px; background-color:rgba(255, 255, 255, 0.8);">
-
-		<input type="text" name="example1">
+		
+		<form method="post" action="./map" name="search">
+		<input type="text" name="spotName">
 
 		<SELECT name="genre">
 			<OPTION value="0">----TEST----</OPTION>
@@ -97,7 +98,9 @@ $map_options = array (
 			<OPTION value="3">3?</OPTION>
 		</SELECT>
 
-		<input type="submit" value="���������">
+		<input type="submit" value="検索">
+		
+		</form>
 
 		<div class="kage" style="position:absolute; left: 90px; top: -20px; "><font color="#fff" size = 5>Hakodate Map +</font></div>
 
