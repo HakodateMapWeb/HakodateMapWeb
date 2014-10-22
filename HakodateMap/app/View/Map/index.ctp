@@ -3,7 +3,7 @@
 <?php
 
 $map_options = array (
-		// 'id' => '',
+		'id' => 'hakodate',
 		'width' => '100%',
 		'height' => '100%',
 		// 'style' => '',
@@ -30,7 +30,7 @@ $map_options = array (
 		'markerIcon' => 'http://google-maps-icons.googlecode.com/files/home.png',
 		'markerShadow' => 'http://google-maps-icons.googlecode.com/files/shadow.png',
 		'infoWindow' => true,
-		'windowText' => 'Future University Hakodate\nつまりﾈﾑｲ(´･ωゞ)' 
+		'windowText' => 'Future University Hakodate\n������������������(����������)' 
 );
 ?>
 <!DOCTYPE html>
@@ -63,7 +63,12 @@ $map_options = array (
 </head>
 <body>
 	<?php echo $this->GoogleMap->map($map_options); ?>
-
+	<?php $i = 0;
+	foreach($spotList as $spot){
+		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['long']));
+		$i++;
+	} ?>
+	
 	<div class="cake.map effect2" style="position:absolute; left:0px; bottom:0px; width: 100%; height:70px; background-color:rgba(30, 144, 255, 0.6);">
 
 		<ul id="sortable" class="ui-sortable">
@@ -92,7 +97,7 @@ $map_options = array (
 			<OPTION value="3">3?</OPTION>
 		</SELECT>
 
-		<input type="submit" value="検　索">
+		<input type="submit" value="���������">
 
 		<div class="kage" style="position:absolute; left: 90px; top: -20px; "><font color="#fff" size = 5>Hakodate Map +</font></div>
 
