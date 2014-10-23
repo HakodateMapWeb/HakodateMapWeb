@@ -20,7 +20,7 @@ class MapController extends AppController {
 		 echo "<p></p>";
 		 echo "</body></html>";
 		//$this->set("title_for_layout","Index Page");
-		//まずspotNameの存在を確認しないとWarningが出るので2回if文を書いてます
+		//spotNameの存在を確認しないとWarningが出るので2回if文を書いてます
 		if(isset($this->data['spotName']))if($this->data['spotName'] != ""){
 			if($this->data['category'] == '0'){
 				$url = MapController::spotQuery($this->data['spotName']);

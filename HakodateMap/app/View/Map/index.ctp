@@ -9,6 +9,7 @@ if(isset($spotList[0])){
 	$lat = 41.773922;
 	$long = 140.726426;
 }
+
 		
 $map_options = array (
 		'id' => 'hakodate',
