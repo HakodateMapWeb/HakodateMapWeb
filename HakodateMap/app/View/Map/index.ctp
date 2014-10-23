@@ -2,6 +2,14 @@
 <?php echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true', false); ?>
 <?php
 
+if(isset($spotList[0])){
+	$lat = $spotList['0']['lat'];
+	$long = $spotList['0']['long'];
+}else{
+	$lat = 41.773922;
+	$long = 140.726426;
+}
+		
 $map_options = array (
 		'id' => 'hakodate',
 		'width' => '100%',
@@ -22,15 +30,15 @@ $map_options = array (
    					}
 		
 		',
-		'latitude' => 41.841835,
-		'longitude' => 140.766998,
+		'latitude' => $lat,
+		'longitude' => $long,
 		// 'address' => '',
-		'marker' => true,
-		'markerTitle' => 'Future University Hakodate',
-		'markerIcon' => 'http://google-maps-icons.googlecode.com/files/home.png',
-		'markerShadow' => 'http://google-maps-icons.googlecode.com/files/shadow.png',
-		'infoWindow' => true,
-		'windowText' => 'Future University Hakodate\n������������������(����������)' 
+		//'marker' => true,
+		//'markerTitle' => 'Future University Hakodate',
+		//'markerIcon' => 'http://google-maps-icons.googlecode.com/files/home.png',
+		//'markerShadow' => 'http://google-maps-icons.googlecode.com/files/shadow.png',
+		//'infoWindow' => true,
+		//'windowText' => 'Future University Hakodate\n������������������(����������)' 
 );
 ?>
 <!DOCTYPE html>
@@ -91,11 +99,14 @@ $map_options = array (
 		<form method="post" action="./map" name="search">
 		<input type="text" name="spotName">
 
-		<SELECT name="genre">
-			<OPTION value="0">----TEST----</OPTION>
-			<OPTION value="1">1?</OPTION>
-			<OPTION value="2">2?</OPTION>
-			<OPTION value="3">3?</OPTION>
+		<SELECT name="category">
+			<OPTION value="0">カテゴリ</OPTION>
+			<OPTION value="イベント">イベント</OPTION>
+			<OPTION value="食べる">食べる</OPTION>
+			<OPTION value="見る">見る</OPTION>
+			<OPTION value="遊ぶ">遊ぶ</OPTION>
+			<OPTION value="買う">買う</OPTION>
+			<OPTION value="温泉">温泉</OPTION>
 		</SELECT>
 
 		<input type="submit" value="検索">

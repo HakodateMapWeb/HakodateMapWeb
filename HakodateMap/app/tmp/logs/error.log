@@ -65,3 +65,764 @@ Stack Trace:
 #9 /Applications/XAMPP/xamppfiles/htdocs/cake/sample/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MapController), Object(CakeRequest))
 #10 /Applications/XAMPP/xamppfiles/htdocs/cake/sample/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2014-10-15 09:08:17 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/View/Test/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/View/Test/index.ctp',
+)
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-17 07:20:19 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:20:19 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:24:23 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:24:23 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:24:24 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:24:24 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:26:24 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:26:24 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:26:25 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:26:25 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:15 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:15 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:16 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:16 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:16 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:16 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:16 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:16 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:16 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:16 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:17 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:17 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:17 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:17 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:29:17 Error: Fatal Error (1): Call to undefined function _test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:29:17 Error: [FatalErrorException] Call to undefined function _test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:04 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:04 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:05 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:05 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:06 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:06 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:06 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:06 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:06 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:06 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:06 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:06 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:06 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:06 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:07 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:07 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:07 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:07 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:07 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:07 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:07 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:07 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:07 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:07 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:08 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:08 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:08 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:08 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:08 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:08 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:31:08 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 10]
+2014-10-17 07:31:08 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 10, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:33:39 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 11]
+2014-10-17 07:33:39 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 11, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 11, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:33:40 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 11]
+2014-10-17 07:33:40 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 11, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 11, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:35:20 Error: Fatal Error (1): Call to undefined function query_execute() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 27]
+2014-10-17 07:35:20 Error: [FatalErrorException] Call to undefined function query_execute()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 27, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 27, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 07:35:21 Error: Fatal Error (1): Call to undefined function query_execute() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 27]
+2014-10-17 07:35:21 Error: [FatalErrorException] Call to undefined function query_execute()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 27, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 27, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 08:53:06 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'HTTP/Client.php' (include_path='/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib:.:/Applications/XAMPP/xamppfiles/lib/php') in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 4]
+2014-10-17 08:53:06 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'HTTP/Client.php' (include_path='/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib:.:/Applications/XAMPP/xamppfiles/lib/php')
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', '/Applications/X...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', '/Applications/X...', 4, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', '/Applications/X...', 4, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-17 09:14:32 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'HTTP/Client.php' (include_path='/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib:.:/Applications/XAMPP/xamppfiles/lib/php') in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 4]
+2014-10-17 09:14:32 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'HTTP/Client.php' (include_path='/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib:.:/Applications/XAMPP/xamppfiles/lib/php')
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', '/Applications/X...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', '/Applications/X...', 4, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', '/Applications/X...', 4, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 05:46:58 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 05:46:58 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 05:47:37 Error: Fatal Error (1): Call to undefined function testQuery() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 05:47:37 Error: [FatalErrorException] Call to undefined function testQuery()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 05:54:54 Error: Fatal Error (1): Call to undefined function testQuery() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 05:54:54 Error: [FatalErrorException] Call to undefined function testQuery()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 05:54:55 Error: Fatal Error (1): Call to undefined function testQuery() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 05:54:55 Error: [FatalErrorException] Call to undefined function testQuery()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:15 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:15 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:16 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:16 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:16 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:16 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:17 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:17 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:17 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:17 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:17 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:17 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:17 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:17 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:17 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:17 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:18 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:18 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:18 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:18 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:18 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:18 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:18 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:18 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:09:18 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:09:18 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 06:13:19 Error: Fatal Error (1): Call to undefined function test() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-20 06:13:19 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 07:04:01 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 16]
+2014-10-20 07:04:01 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 07:18:56 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 16]
+2014-10-20 07:18:56 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 16, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 16, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 07:32:56 Error: Fatal Error (1): Call to undefined function indent() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 15]
+2014-10-20 07:32:56 Error: [FatalErrorException] Call to undefined function indent()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 15, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 15, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 07:46:50 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 15]
+2014-10-20 07:46:50 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/X...', 15)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/X...', 15, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/X...', 15, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 09:54:51 Error: Fatal Error (4): syntax error, unexpected '$obj' (T_VARIABLE) in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 15]
+2014-10-20 09:54:51 Error: [FatalErrorException] syntax error, unexpected '$obj' (T_VARIABLE)
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 15, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 15, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 08:36:24 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 70]
+2014-10-21 08:36:24 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 70)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 70, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 70, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 08:36:57 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 21]
+2014-10-21 08:36:57 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 08:42:55 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 20]
+2014-10-21 08:42:55 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 20, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 20, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 08:45:42 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 20]
+2014-10-21 08:45:42 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 20, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 20, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 10:28:07 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 22]
+2014-10-21 10:28:07 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 22, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 22, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 10:29:34 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 22]
+2014-10-21 10:29:34 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 22, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 22, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 08:17:23 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 18]
+2014-10-22 08:17:23 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 08:18:28 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 18]
+2014-10-22 08:18:28 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 08:32:42 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 30]
+2014-10-22 08:32:42 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 08:33:36 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 30]
+2014-10-22 08:33:36 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 08:34:39 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 30]
+2014-10-22 08:34:39 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 30, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 30, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 08:58:16 Error: Fatal Error (1): Call to undefined function runQuery() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 12]
+2014-10-22 08:58:16 Error: [FatalErrorException] Call to undefined function runQuery()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 12, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 12, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 09:26:07 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/View/Map/index.ctp, line 68]
+2014-10-22 09:26:07 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /cake/HakodateMapWeb/HakodateMap/Map
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 68, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 68, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 09:34:28 Error: Fatal Error (1): Call to undefined method TestController::a() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/TestController.php, line 13]
+2014-10-22 09:34:28 Error: [FatalErrorException] Call to undefined method TestController::a()
+Request URL: /cake/HakodateMapWeb/HakodateMap/Test
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 13, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 10:07:55 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /cake/HakodateMapWeb/HakodateMap/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-23 05:17:45 Error: Fatal Error (64): Cannot redeclare MapController::queryGene() in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/Controller/MapController.php, line 111]
+2014-10-23 05:17:45 Error: [FatalErrorException] Cannot redeclare MapController::queryGene()
+Request URL: /cake/HakodateMapWeb/HakodateMap/map
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/X...', 111)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/X...', 111, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/X...', 111, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-23 07:30:54 Error: Fatal Error (4): syntax error, unexpected '*' in [/Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/app/View/Map/index.ctp, line 18]
+2014-10-23 07:30:54 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /cake/HakodateMapWeb/HakodateMap/Map
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 18, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cake/HakodateMapWeb/HakodateMap/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
