@@ -61,6 +61,7 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		
 		return $url;
 	}
+	
 	public $name = 'Web';
 	public $uses = null;
 	public $layout = "Web";
