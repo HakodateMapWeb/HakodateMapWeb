@@ -90,26 +90,22 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 	public $uses = null;
 	public $layout = "Web";
 	public function index() {
-		// $this -> autoLayout = false;
 		// $this -> autoRender = true;
-		// echo "え";
+
+		$obj=WebController::runQuery(WebController::topQuery());
+		$spotList=(WebController::parse($obj));
+		$this->set('spotList',$spotList);
+		
 	}
 	public function home() {
-		// $this -> autoLayout = false;
-		// $this -> autoRender = true;
-		// echo "え";
+
 	}
 	public function about() {
-		// $this -> autoLayout = false;
-		// $this -> autoRender = true;
-		// echo "え";
+
 	}
 	public function courselist(){
 		$obj=WebController::runQuery(WebController::courseNameAll());
 		$courseList=(WebController::parse($obj));
 		$this->set('courseList',$courseList);
-		// $this -> autoLayout = false;
-		// $this -> autoRender = true;
-		// echo "え";
 	}
 }
