@@ -34,7 +34,7 @@ $map_options = array (
 		'latitude' => $lat,
 		'longitude' => $long,
 		// 'address' => '',
-		//'marker' => true,
+		'marker' => false,
 		//'markerTitle' => 'Future University Hakodate',
 		//'markerIcon' => 'http://google-maps-icons.googlecode.com/files/home.png',
 		//'markerShadow' => 'http://google-maps-icons.googlecode.com/files/shadow.png',
@@ -74,7 +74,13 @@ $map_options = array (
 	<?php echo $this->GoogleMap->map($map_options); ?>
 	<?php $i = 0;
 	foreach($spotList as $spot){
-		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['long']));
+		$marker_options = array(
+    	'showWindow' => true,
+		'windowText' => $spot['spotName'],
+    	'markerTitle' => $spot['spotName'],
+   		'markerShadow' => 'http://labs.google.com/ridefinder/images/mm_20_purpleshadow.png',
+  		);
+		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['long']), $marker_options);
 		$i++;
 	} ?>
 	
