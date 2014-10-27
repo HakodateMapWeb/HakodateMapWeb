@@ -20,6 +20,8 @@ class MapController extends AppController {
 		 echo "<p></p>";
 		 echo "</body></html>";
 		//$this->set("title_for_layout","Index Page");
+		
+		 $spotList = array();
 		//spotNameの存在を確認しないとWarningが出るので2回if文を書いてます
 		if(isset($this->data['spotName']))if($this->data['spotName'] != ""){
 			if($this->data['category'] == '0'){
@@ -28,10 +30,9 @@ class MapController extends AppController {
 				$url = MapController::spotCategoryQuery($this->data['spotName'], $this->data['category']);
 			}
 			$searchResult = MapController::runQuery($url);
-			$spotList = array();
 			$spotList = MapController::parse($searchResult);
-			$this->set('spotList',$spotList);
 		}
+		$this->set('spotList',$spotList);
 	}
 	
 	public function other() {
