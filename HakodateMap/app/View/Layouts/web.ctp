@@ -15,10 +15,12 @@ echo $scripts_for_layout;
 		<!-- <div id="header">** ここにタイトル？画像？ロゴ？ **</div> -->
 		<div id="gnav">
 			<ul>
-				<li class="gnav01"><a href="./">TOP</a></li>
-				<li class="gnav02"><a href="./about">ABOUT</a></li>
-				<li class="gnav03"><a href="./courselist">COURSELIST</a></li>
-				<li class="gnav04"><a href="../Map">MAP</a></li>
+				<li class="gnav01"><a href="/cake/HakodateMapWeb/HakodateMap/Web/">TOP</a></li>
+				<li class="gnav02"><a
+					href="/cake/HakodateMapWeb/HakodateMap/Web/about">ABOUT</a></li>
+				<li class="gnav03"><a
+					href="/cake/HakodateMapWeb/HakodateMap/Web/courselist">COURSELIST</a></li>
+				<li class="gnav04"><a href="/cake/HakodateMapWeb/HakodateMap/Map">MAP</a></li>
 			</ul>
 		</div>
 		<div id="content">
