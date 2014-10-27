@@ -9,10 +9,10 @@
 echo $this->Html->css('cake.web');
 echo $scripts_for_layout;
 ?>
+
 </head>
 <body>
 	<div id="container" class="clearfix">
-		<!-- <div id="header">** ここにタイトル？画像？ロゴ？ **</div> -->
 		<div id="gnav">
 			<ul>
 				<li class="gnav01"><a href="/cake/HakodateMapWeb/HakodateMap/Web/">TOP</a></li>
