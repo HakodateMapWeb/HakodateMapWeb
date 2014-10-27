@@ -84,7 +84,7 @@ $map_options = array (
 		$i++;
 	} ?>
 	
-	<div class="cake.map effect2" style="position:absolute; left:0px; bottom:0px; width: 100%; height:70px; background-color:rgba(30, 144, 255, 0.6);">
+	<div class="cake.web effect2" style="position:absolute; bottom:0px; width: 100%; height:70px; background-color:rgba(30, 144, 255, 0.6);">
 
 		<ul id="sortable" class="ui-sortable">
 			<li class="ui-state-default ui-sortable-handle">1</li>
@@ -99,34 +99,7 @@ $map_options = array (
 
 	</div>
 
-	<div class="cake.map effect3-1" style="position:absolute; left:-140px; top:47px; width:320px; height: 8px; background-color:rgba(0, 144, 255, 0.6);"> </div>
-
-	<div class="cake.map effect3" style="position:absolute; left:0px; top:20px; padding: 3px 3px 3px 40px; background-color:rgba(255, 255, 255, 0.8);">
-		
-		<form method="post" action="./map" name="search">
-		<input type="text" name="spotName">
-
-		<SELECT name="category">
-			<OPTION value="0">カテゴリ</OPTION>
-			<OPTION value="イベント">イベント</OPTION>
-			<OPTION value="食べる">食べる</OPTION>
-			<OPTION value="見る">見る</OPTION>
-			<OPTION value="遊ぶ">遊ぶ</OPTION>
-			<OPTION value="買う">買う</OPTION>
-			<OPTION value="温泉">温泉</OPTION>
-		</SELECT>
-
-		<input type="submit" value="検索">
-		
-		</form>
-
-		<div class="kage" style="position:absolute; left: 90px; top: -20px; "><font color="#fff" size = 5>Hakodate Map +</font></div>
-
-	</div>
-
-	<div class="cake.map effect3-1" style="position:absolute; left:-160px; top:47px; width:320px; height: 8px; background-color:rgba(0, 212, 255, 0.8);"> </div>
-
-	<div class="cake.map effect1" style="position:absolute; right:20px; bottom:95px; width: 200px; height:80%; background-color:rgba(255, 255, 255, 1);">
+	<div class="cake.web effect1" style="position:absolute; right:20px; bottom:95px; width: 200px; height:80%; background-color:rgba(255, 255, 255, 1);">
 
 	  	<div class="TAB">
 		    <input name="s3" id="select1" value="1" checked="" type="radio">
