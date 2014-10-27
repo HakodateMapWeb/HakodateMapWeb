@@ -94,12 +94,13 @@ body {
 #gnav {
 	background: #00c4ab;
 	float: left;
-	width: 200px;
+	position: fixed;
+	width: 15%;
 	height: 100%;
 }
 
 #gnav ul {
-	width: 200px;
+	width: 100%;
 	margin: 0 auto;
 	/*border-right: #fff 1px solid;*/
 	overflow: hidden;
@@ -107,7 +108,7 @@ body {
 
 #gnav li {
 	float: left;
-	width: 200px;
+	width: 100%;
 	/*border-left: #fff 1px solid;*/
 }
 /*
@@ -137,9 +138,11 @@ body {
 	background: #ffffff;
 	color: #00c4ab;
 	margin: 0 0 0;
-	padding: 10px 20px 40px 20px;
+	padding: 0px 0px 0px 0px;
 	float: left;
-	width: 740px;
+	position: relative;
+	left: 15%;
+	width: 85%;
 	height: 100%;
 }
 
