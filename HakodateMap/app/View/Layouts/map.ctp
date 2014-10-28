@@ -18,7 +18,7 @@ echo $scripts_for_layout;
 				<li class="gnav01"><a href="../Web/">TOP</a></li>
 				<li class="gnav02"><a href="../Web/about">ABOUT</a></li>
 				<li class="gnav03"><a href="../Web/courselist">COURSELIST</a></li>
-				<li class="gnav04"><a href="./">MAP</a></li>
+				<li class="gnav04"><a href="./Map">MAP</a></li>
 			</ul>
 			<form method="post" action="./Map" name="search">
 		<input type="text" name="spotName">
