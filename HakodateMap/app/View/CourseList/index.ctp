@@ -1,5 +1,7 @@
 <?php foreach($courseList as $course){
 			echo $course['courseName'];
+			echo ": " .$course['image'];
+			echo "<br/>";
 		}?>
 <!--<?php for($i = 0; $i<10; $i++){
 	echo "<div id=\"gnav\">
