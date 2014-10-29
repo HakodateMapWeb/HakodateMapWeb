@@ -4,7 +4,7 @@
 /*全ての要素に対する余白初期値設定*/
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, li, table, th, td,
 	form, select, option, input
-address, pre, strong, em, iframe, img{
+address, pre, strong, em, iframe, img {
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
@@ -12,7 +12,7 @@ address, pre, strong, em, iframe, img{
 }
 
 /*デフォルト文字設定*/
-body{
+body {
 	color: #666666;
 	font-family: sans-serif;
 	font-size: 13px;
@@ -21,58 +21,59 @@ body{
 }
 
 /*リストマーカーを非表示*/
-ul, ol{
+ul, ol {
 	list-style-type: none;
 }
 
 /*テーブルセルのボーダーの設定*/
-table{
+table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /*画像とフォームパーツの上下位置をテキストの真ん中に*/
-img, input, select, textarea{
+img, input, select, textarea {
 	vertical-align: middle;
 }
 
 /*デフォルトリンク色の設定*/
-a{
+a {
 	color: #00C4AB;
 }
 
-a:hover{
+a:hover {
 	color: #CCE739;
 }
 
 /*画像リンクの設定*/
-a img{
+a img {
 	opacity: 1;
 	filter: alpha(opacity = 100);
 }
 
-a:hover img{
+a:hover img {
 	opacity: 0.7;
 	filter: alpha(opacity = 75);
 }
 
 /*clearfix*/
-.clearfix:after{/*for modern browser*/
+.clearfix:after { /*for modern browser*/
 	content: "";
 	display: block;
 	clear: both;
 }
 
-* html .clearfix{
+* html .clearfix {
 	zoom: 1;
-}/*for IE6*/
-*:first-child+html .clearfix{
+} /*for IE6*/
+*:first-child+html .clearfix {
 	zoom: 1;
-}/*for IE7*/
+} /*for IE7*/
 
 /*Layout*/
 body {
 	/*border-top: #cce739 5px solid;*/
+	
 }
 
 /*Header*/
@@ -83,6 +84,7 @@ body {
 	/*background:url() #e6e6e6;*/
 	/*font-size: 14pt;*/
 	/*font-weight: bold*/
+	
 }
 
 #header .inner {
@@ -141,7 +143,7 @@ body {
 	color: #00c4ab;
 	/*float: left;*/
 	position: relative;
-	width: 100%-150px;
+	width: 100% -150px;
 	height: 100%;
 	margin-left: 150px;
 	/*margin: 0 0 0 150px;*/
@@ -161,35 +163,37 @@ body {
 }
 
 /*Mapから移植*/
-.TAB input{
-	    display: none;
-	}
-	.TAB label{
-	    display: block;
-	    float: left;
-	    cursor: pointer;
-	    width: 89px;
-	    margin: 0;
-	    padding: 12px 3px;
-	    border-right: 1px solid #abb2b7;
-	    background: #bdc3c7;
-	    color: #555e64;
-	    font-size: 14px;
-	    text-align: center;
-	    line-height: 1;
-	    transition: .2s;	    
-	}
-	.TAB label:hover{
-		background: #91D1F2;
-	}
-	.TAB input[type="radio"]:checked + label {
-	    background-color: #4FAAE2;
-	    padding: 12px 7px 12px 7px;
-	    box-shadow: 0px 4px 2px 0px rgba(10, 200, 150, 0.3);
-	    color: #fff;
-	}
+.TAB input {
+	display: none;
+}
 
+.TAB label {
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 89px;
+	margin: 0;
+	padding: 12px 3px;
+	border-right: 1px solid #abb2b7;
+	background: #bdc3c7;
+	color: #555e64;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1;
+	transition: .2s;
+}
+
+.TAB label:hover {
+	background: #91D1F2;
+}
+
+.TAB input[type="radio"]:checked+label {
+	background-color: #4FAAE2;
+	padding: 12px 7px 12px 7px;
+	box-shadow: 0px 4px 2px 0px rgba(10, 200, 150, 0.3);
+	color: #fff;
+}
 
 .textAlpha {
-    opacity: 0.9;
+	opacity: 0.9;
 }

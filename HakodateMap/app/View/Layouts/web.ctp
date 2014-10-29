@@ -15,7 +15,7 @@ echo $scripts_for_layout;
 	<div id="container" class="clearfix">
 		<div id="gnav">
 			<ul>
-				<li class="gnav01"><a href="./">TOP</a></li>
+				<li class="gnav01"><a href="./">HOME</a></li>
 				<li class="gnav02"><a href="./about">ABOUT</a></li>
 				<li class="gnav03"><a href="./courselist">COURSELIST</a></li>
 				<li class="gnav04"><a href="../Map">MAP</a></li>

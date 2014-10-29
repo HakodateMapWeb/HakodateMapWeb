@@ -74,7 +74,7 @@ class HomeController extends AppController {
 
 	public $name = 'Home';
 	public $uses = null;
-	public $layout = "Web";
+	public $layout = "Home";
 	public function index() {
 		// $this -> autoRender = true;
 		$obj=HomeController::runQuery(HomeController::topQuery());
