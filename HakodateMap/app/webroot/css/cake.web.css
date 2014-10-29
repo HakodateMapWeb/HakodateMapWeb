@@ -102,7 +102,6 @@ body {
 #gnav ul {
 	width: 100%;
 	margin: 0 auto;
-	/*border-right: #fff 1px solid;*/
 	overflow: hidden;
 }
 
@@ -110,7 +109,6 @@ body {
 	float: left;
 	width: 100%;
 	border-bottom: #fff 1px solid;
-	/*border-left: #fff 1px solid;*/
 }
 
 #gnav li.gnav01 {
@@ -163,29 +161,6 @@ body {
 }
 
 /*Mapから移植*/
-#sortable-div {
-    width: 50%;
-}
-
-.kage {
- 	text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3) 
- }
-
-.effect1 {
-    box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.3);
-}
-.effect2 {
-    box-shadow: 0 -2px 10px 4px rgba(0, 0, 0, 0.3);
-}
-.effect3 {
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-}
-.effect3-1 {
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transform: rotate(-40deg);
-}
-
 .TAB input{
 	    display: none;
 	}
