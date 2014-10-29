@@ -72,21 +72,21 @@ a:hover img{
 
 /*Layout*/
 body {
-	border-top: #cce739 5px solid;
+	/*border-top: #cce739 5px solid;*/
 }
 
 /*Header*/
 #header {
-	padding: 10px 0;
+	/*padding: 10px 0;
 	border-top: #00c4ab 5px solid;
-	background: #00c4ab;
+	background: #00c4ab;*/
 	/*background:url() #e6e6e6;*/
 	/*font-size: 14pt;*/
 	/*font-weight: bold*/
 }
 
 #header .inner {
-	width: 940px;
+	width: 940xp;
 	margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ body {
 	background: #00c4ab;
 	float: left;
 	position: fixed;
-	width: 15%;
+	width: 150px;
 	height: 100%;
 }
 
@@ -109,17 +109,21 @@ body {
 #gnav li {
 	float: left;
 	width: 100%;
+	border-bottom: #fff 1px solid;
 	/*border-left: #fff 1px solid;*/
 }
-/*
+
 #gnav li.gnav01 {
-	widht: 200px;
-}*/
+	float: left;
+	width: 100%;
+	border-top: #fff 1px solid;
+	border-bottom: #fff 1px solid;
+}
 
 #gnav a {
 	display: block;
-	padding: 10px 0;
-	text-align: center;
+	padding: 10px 15%;
+	text-align: left;
 	text-decoration: none;
 	color: #fff;
 }
@@ -137,13 +141,13 @@ body {
 #content {
 	background: #ffffff;
 	color: #00c4ab;
-	margin: 0 0 0;
-	padding: 0px 0px 0px 0px;
-	float: left;
+	/*float: left;*/
 	position: relative;
-	left: 15%;
-	width: 85%;
+	width: 100%-150px;
 	height: 100%;
+	margin-left: 150px;
+	/*margin: 0 0 0 150px;*/
+	padding: 0px 0px 0px 0px;
 }
 
 /*Footer*/
