@@ -47,20 +47,6 @@ class HomeController extends AppController {
 
 				return json_decode ( $response, true );
 	}
-	function courseNameAll() {
-		$query = '
-			PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT ?courseName WHERE {
-GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
- ?s rdfs:label ?courseName;
-	}
-	}';
-
-		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query=' . urlencode ( $query ) . '&output=json';
-
-		return $url;
-	}
 
 	//全スポットのスポット名，カテゴリ，画像urlを問い合わせるurlを生成する
 	function topQuery(){
@@ -91,21 +77,14 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 	public $layout = "Web";
 	public function index() {
 		// $this -> autoRender = true;
-
-		$obj=WebController::runQuery(WebController::topQuery());
-		$spotList=(WebController::parse($obj));
+		$obj=HomeController::runQuery(HomeController::topQuery());
+		$spotList=(HomeController::parse($obj));
 		$this->set('spotList',$spotList);
-
 	}
 	public function home() {
 
 	}
 	public function about() {
 
-	}
-	public function courselist(){
-		$obj=WebController::runQuery(WebController::courseNameAll());
-		$courseList=(WebController::parse($obj));
-		$this->set('courseList',$courseList);
 	}
 }

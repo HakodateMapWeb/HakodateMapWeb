@@ -62,39 +62,13 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		return $url;
 	}
 	
-	//全スポットのスポット名，カテゴリ，画像urlを問い合わせるurlを生成する
-	function topQuery(){
-		$query = "
-				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-				PREFIX schema: <http://schema.org/>
-	
-				SELECT DISTINCT ?spotName ?category ?image
-	
-				FROM <file:///var/lib/4store/hakobura_akiba.rdf>
-	
-				WHERE {
-  					GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
-   						?hs rdfs:label ?spotName;
-						rdfs:comment ?category;
-						schema:image ?image.
- 						}
-				}";
-	
-		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query='.
-				urlencode($query).'&output=json';
-	
-		return $url;
-	}
-	
 	public $name = 'CourseList';
 	public $uses = null;
-	public $layout = "Web";
+	public $layout = "CourseList";
 	public function index() {
 		// $this -> autoRender = true;
 
-		$obj=WebController::runQuery(WebController::topQuery());
-		$spotList=(WebController::parse($obj));
-		$this->set('spotList',$spotList);
+		CourseListController::courselist();
 		
 	}
 	public function home() {
@@ -104,8 +78,8 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 
 	}
 	public function courselist(){
-		$obj=WebController::runQuery(WebController::courseNameAll());
-		$courseList=(WebController::parse($obj));
+		$obj=CourseListController::runQuery(CourseListController::courseNameAll());
+		$courseList=(CourseListController::parse($obj));
 		$this->set('courseList',$courseList);
 	}
 }

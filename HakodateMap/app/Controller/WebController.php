@@ -47,6 +47,8 @@ class WebController extends AppController {
 		
 		return json_decode ( $response, true );
 	}
+	
+	//全まちあるきコースのコース名を取得する
 	function courseNameAll() {
 		$query = '
 			PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
