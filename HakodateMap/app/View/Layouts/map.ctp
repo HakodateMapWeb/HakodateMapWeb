@@ -21,6 +21,10 @@ echo $scripts_for_layout;
 				<li class="gnav03"><a href="../HakodateMap/CourseList">COURSELIST</a></li>
 				<li class="gnav04"><a href="./Map">MAP</a></li>
 			</ul>
+			<form method="post" action="./Map" name="search">
+				<input type="text" name="spotName" class="text"> <input
+					type="submit" value="検索" class="submit">
+			</form>
 		</div>
 		<div id="content">
 		<?php echo $content_for_layout; ?>
