@@ -70,7 +70,7 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 	PREFIX schema: <http://schema.org/>
 	PREFIX dc: <http://purl.org/dc/elements/1.1/>
 	
-	SELECT DISTINCT ?courseName ?image  WHERE {
+	SELECT DISTINCT ?courseName ?spotName ?image  WHERE {
 		GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		?s rdfs:label ?courseName;
 		dc:relation ?mspotURI.
@@ -84,6 +84,30 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		
 		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query=' . urlencode ( $query ) . '&output=json';
 		
+		return $url;
+	}
+	
+	//全コース名とそのスポットのリストを取得する
+	function courseSpotList() {
+		$query = '
+	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+	PREFIX schema: <http://schema.org/>
+	PREFIX dc: <http://purl.org/dc/elements/1.1/>
+	
+	SELECT DISTINCT ?courseName ?spotName ?image  WHERE {
+		GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
+		?s rdfs:label ?courseName;
+		dc:relation ?mspotURI.
+		?mspotURI schema:name ?spotName.
+	
+	}GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
+	?hspotName rdfs:label ?spotName;
+	schema:image ?image.
+	}
+	}';
+	
+		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query=' . urlencode ( $query ) . '&output=json';
+	
 		return $url;
 	}
 	
