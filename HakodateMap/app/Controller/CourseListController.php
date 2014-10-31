@@ -62,8 +62,8 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		return $url;
 	}
 	
-	//"画像を持った"スポットのあるコースをスポット名＋画像で取得する
-	//画像を持たないコースは一切取得されないのでcourseNameAllと合わせて何とかされたし
+	// "画像を持った"スポットのあるコースをスポット名＋画像で取得する
+	// 画像を持たないコースは一切取得されないのでcourseNameAllと合わせて何とかされたし
 	function courseImage() {
 		$query = '
 	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -87,69 +87,75 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		return $url;
 	}
 	
-	//全コース名とそのスポットのリストを取得する
+	// 全コース名とそのスポットのリストを取得する
 	function courseSpotList() {
 		$query = '
-	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	PREFIX schema: <http://schema.org/>
-	PREFIX dc: <http://purl.org/dc/elements/1.1/>
-	
-	SELECT DISTINCT ?courseName ?spotName ?image  WHERE {
-		GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
-		?s rdfs:label ?courseName;
-		dc:relation ?mspotURI.
-		?mspotURI schema:name ?spotName.
-	
-	}GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
-	?hspotName rdfs:label ?spotName;
-	schema:image ?image.
-	}
-	}';
-	
+	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?courseName ?spotList FROM <file:///var/lib/4store/machiarukiinfo.rdf>
+WHERE {
+ ?s rdfs:label ?courseName;
+ schema:name ?spotList.
+}';
+		
 		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query=' . urlencode ( $query ) . '&output=json';
-	
+		
 		return $url;
 	}
-	
 	public $name = 'CourseList';
 	public $uses = null;
 	public $layout = "CourseList";
 	public function index() {
 		// $this -> autoRender = true;
-		CourseListController::courselist();
+		CourseListController::courselist ();
 	}
-	
-	public function home() {
-
-	}
-	public function about() {
-
-	}
-	public function courselist(){
-		$obj=CourseListController::runQuery(CourseListController::courseNameAll());
-		$courseNameList=(CourseListController::parse($obj));
+	public function courselist() {
+		$obj = CourseListController::runQuery ( CourseListController::courseNameAll () );
+		$courseNameList = (CourseListController::parse ( $obj ));
 		
-		$obj=CourseListController::runQuery(CourseListController::courseImage());
-		$courseImageList=(CourseListController::parse($obj));
-
-		$courseList = $course = array();
+		$obj = CourseListController::runQuery ( CourseListController::courseImage () );
+		$courseImageList = (CourseListController::parse ( $obj ));
+		
+		$obj = CourseListController::runQuery ( CourseListController::courseSpotList () );
+		$courseSpotList = (CourseListController::parse ( $obj ));
+		
+		$courseList = $course = array ();
+		$courseListSpot = $courseSpot = array ();
 		$flag = false;
 		
-		foreach($courseNameList as $name){
+		foreach ( $courseNameList as $name ) {
 			$flag = false;
-			foreach($courseImageList as $image){
-				if(!strcmp($name['courseName'], $image['courseName'])){
-					$course = array('courseName' => $name['courseName'], 'image' => $image['image']);
+			foreach ( $courseImageList as $image ) {
+				if (! strcmp ( $name ['courseName'], $image ['courseName'] )) {
+					$course = array (
+							'courseName' => $name ['courseName'],
+							'image' => $image ['image'] 
+					);
 					$flag = true;
 					break;
 				}
 			}
-			if($flag == false){
-				$course = array('courseName' => $name['courseName'], 'image' => "no image");
+			if ($flag == false) {
+				$course = array (
+						'courseName' => $name ['courseName'],
+						'image' => "no image" 
+				);
 			}
-			array_push($courseList, $course);
+			array_push ( $courseList, $course );
 		}
-		
-		$this->set('courseList',$courseList);
+		foreach ( $courseNameList as $name ) {
+			foreach ( $courseSpotList as $spot ) {
+				$courseSpot = array (
+						'courseName' => $name ['courseName'],
+						'spotList' => $spot ['spotList'] 
+				);
+			}
+			array_push ( $courseListSpot, $spot );
+		}
+		$this->set ( 'courseList', $courseList );
+		$this->set ( 'courseListSpot', $courseListSpot );
 	}
 }

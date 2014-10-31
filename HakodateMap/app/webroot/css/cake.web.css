@@ -94,7 +94,7 @@ body {
 
 /*GlobalNavigation*/
 #gnav {
-	background: #00c4ab;
+	background: #0092CA;
 	float: left;
 	position: fixed;
 	width: 150px;
@@ -151,15 +151,13 @@ body {
 }
 
 #gnav input.text {
-	float: left;
-	width: 105px;
-	height: auto;
+	float:left;
+	width: 80%-10px;
 }
 
 #gnav input.submit {
 	float: right;
-	width: auto;
-	height: auto;
+	width: 40px;
 }
 
 #content {

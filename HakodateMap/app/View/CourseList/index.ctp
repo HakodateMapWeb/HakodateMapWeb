@@ -3,12 +3,18 @@ foreach ( $courseList as $course ) {
 	echo $course ['courseName'];
 	echo ": " . $course ['image'];
 	echo "<br/>";
+	foreach ( $courseListSpot as $courseSpot ) {
+		if(strcmp($course ['courseName'], $courseSpot['courseName'])){
+			echo $courseSpot ['spotList'];
+			break;
+		}
+	}
 	$count = 1;
-	$str = $course ['image'];
-	$str2 = $course ['courseName'];
+	$image = $course ['image'];
+	$name = $course ['courseName'];
 	echo "<div id=\"box\">
 	<ul>
-	<li class=\"box0$count\"><img src=\"$str\" alt=\"$str2\"></li>
+	<li class=\"box0$count\"><img src=\"$image\" alt=\"$name\"></li>
 	</ul>
 	</div>";
 	$count++;
