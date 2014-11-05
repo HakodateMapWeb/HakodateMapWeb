@@ -14,7 +14,7 @@ if(isset($spotList[0])){
 $map_options = array (
 		'id' => 'hakodate',
 		'width' => '100%',
-		'height' => '100%',
+		'height' => '90%',
 		// 'style' => '',
 		'zoom' => 15,
 		'type' => 'ROADMAP',
@@ -39,7 +39,7 @@ $map_options = array (
 		//'markerIcon' => 'http://google-maps-icons.googlecode.com/files/home.png',
 		//'markerShadow' => 'http://google-maps-icons.googlecode.com/files/shadow.png',
 		//'infoWindow' => true,
-		//'windowText' => 'Future University Hakodate\n������������������(����������)' 
+		//'windowText' => 'Future University Hakodate\n'
 );
 ?>
 <!DOCTYPE html>
@@ -57,9 +57,15 @@ $map_options = array (
 <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
 
+
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
+ <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+
+
 <style>
 	#sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-	#sortable li { margin: 3px 3px 0 5px; padding: 0px; float: left; width: 100px; height: 60px; font-size: 3em; text-align: center; }
+	#sortable li { margin: 3px 3px 0 5px; padding: 0px; float: left; width: 10%; height: 75%; font-size: 120%; text-align: center; }
 </style>
 
  <script>
@@ -68,6 +74,17 @@ $map_options = array (
 	$( "#sortable" ).disableSelection();
 	});
 </script>
+
+
+<script type="text/javascript"><!--
+function ChangeTab(tabname) {
+   // 全部消す
+   document.getElementById('tab1').style.display = 'none';
+   document.getElementById('tab2').style.display = 'none';
+   // 指定箇所のみ表示
+   document.getElementById(tabname).style.display = 'block';
+}
+// --></script>
 
 </head>
 <body>
@@ -84,31 +101,79 @@ $map_options = array (
 		$i++;
 	} ?>
 	
-	<div class="cake.web effect2" style="position:absolute; bottom:0px; width: 100%; height:70px; background-color:rgba(30, 144, 255, 0.6);">
 
-		<ul id="sortable" class="ui-sortable">
-			<li class="ui-state-default ui-sortable-handle">1</li>
-			<li class="ui-state-default ui-sortable-handle">2</li>
-			<li class="ui-state-default ui-sortable-handle">3</li>
-			<li class="ui-state-default ui-sortable-handle">4</li>
-			<li class="ui-state-default ui-sortable-handle">5</li>
-			<li class="ui-state-default ui-sortable-handle">6</li>
-			<li class="ui-state-default ui-sortable-handle">7</li>
-			<li class="ui-state-default ui-sortable-handle">8</li>
-		</ul>
+
+	<div class="cake.web effect1" style="position:absolute; right:20px; bottom:20%; width: 200px; height:75%; background-color:rgba(255, 255, 255, 1);">
+			<div class="tabbox">
+			    <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">タブ1</a>
+			    <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">タブ2</a>
+			   <div id="tab1">
+			      <p>
+			      (タブ1の中身) <br>
+					あいうえおかきくけこさしすせそたちつてと<br>
+			      <?php 
+			      	for($i = 0; $i <= 20; $i++){
+						printf("　・　test[%02d] <br>", $i);
+					}
+			      ?>
+			      </p>
+			   </div>
+			   <div id="tab2">
+			      <p>
+			      (タブ2の中身) <br>
+			      <div class = "ImageArea">
+			      	NO IMAGE
+			      </div>
+			      </p>
+			   </div>
+			</div>
+			<script type="text/javascript"><!--
+		  	 // デフォルトのタブを選択
+		 	  ChangeTab('tab1');
+			// --></script>
 
 	</div>
-
-	<div class="cake.web effect1" style="position:absolute; right:20px; bottom:95px; width: 200px; height:80%; background-color:rgba(255, 255, 255, 1);">
-
-	  	<div class="TAB">
-		    <input name="s3" id="select1" value="1" checked="" type="radio">
-		    <label for="select1">TEST1</label>
-		    <input name="s3" id="select2" value="2" type="radio">
-		    <label for="select2">TEST2</label>
-		</div>
-
-	</div>
+	
 
 </body>
+<footer>
+	<div style="position:static; bottom:0px; right:0px; width: 100%; height:10%; background-color:#78BCFF;">
+
+		<div id="bucket" class="drop">
+        	<p>
+        	ゴミ箱 <br>
+        	消したいものはここへドラック
+        	</p>
+   		</div>	
+		
+		<ul id="list" class="sortable_li">
+	    <li id="test-1" class="dropme">One</li>
+	    <li id="test-2" class="dropme">Two</li>
+	    <li id="test-3" class="dropme">Three</li>
+	    <li id="test-4" class="dropme">Four</li>
+	    </ul>
+	    
+   		<script>
+        $("#list").sortable({
+        containment : 'document',
+        cursor : 'move',
+        items: 'li',
+        stop: function(event, ui) { 
+            if (deleteMe) {
+                        ui.item.remove();
+                        deleteMe = false;
+                    }
+       		}
+	    });   
+	    $('#bucket').droppable({
+	        drop: function(event, ui) {
+	            deleteMe = true; 
+	        },
+	        accept: '.dropme'
+	    });
+	    </script>
+
+	</div>
+</footer>
+
 </html>

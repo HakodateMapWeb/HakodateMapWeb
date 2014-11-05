@@ -216,37 +216,89 @@ body {
 }
 
 /*Mapから移植*/
-.TAB input {
-	display: none;
+.effect1 {
+    box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.3);
 }
-
-.TAB label {
+	
+.tabbox {
+	width: 100%;
+	}
+	.tabbox a{
+	 	display: block;
+	    float: left;
+	    cursor: pointer;
+	    width: 50%;
+	    margin: 0;
+	    padding: 12px 0px;
+	    font-size: 75%;
+	    text-align: center;
+	    transition: .2s;
+	}
+	.tabbox a.tab1 {
+		background-color: 00bfff;
+		color: white;
+		border-bottom: 3px solid #0085b2;
+	}
+	.tabbox a.tab2 {
+		background-color: #00fa9a;
+		color: white;
+		border-bottom: 3px solid #00cc7d;
+	}
+	.tabbox a.tab1:hover{
+		background: #4cd2ff;
+	}
+	.tabbox a.tab2:hover{
+		background: #4af9b6;
+	}
+	.tabbox div {
+		height: 80%;
+		overflow: auto;
+		clear: left;
+	}
+	.tabbox div.ImageArea{
+		margin: 0 auto; 
+		height:50px;
+		display: block;
+		float: center;
+		border: 0px;
+		padding: 12px 0px;
+		width: 80%;
+		background: #add8e6;
+		text-align: center;
+	}
+	
+.sortable_li{
+	width: 100%;
+}
+.sortable_li li{
 	display: block;
 	float: left;
 	cursor: pointer;
-	width: 89px;
-	margin: 0;
-	padding: 12px 3px;
-	border-right: 1px solid #abb2b7;
-	background: #bdc3c7;
-	color: #555e64;
-	font-size: 14px;
+	width: 70px;
+	height:20px;
+	margin: 10px 5px 0 5px;
+	padding: 12px 0px;
+	border:2px solid #0085b2;
+	font-size: 75%;
 	text-align: center;
-	line-height: 1;
-	transition: .2s;
+	background: #ffffff;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */  
 }
 
-.TAB label:hover {
-	background: #91D1F2;
-}
-
-.TAB input[type="radio"]:checked+label {
-	background-color: #4FAAE2;
-	padding: 12px 7px 12px 7px;
-	box-shadow: 0px 4px 2px 0px rgba(10, 200, 150, 0.3);
-	color: #fff;
-}
-
-.textAlpha {
-	opacity: 0.9;
+.drop {
+	display: block;
+	float: left;
+	width: 130px;
+	height:20px;
+	margin: 10px 5px 0 5px;
+	padding: 12px 0px;
+	border:2px solid #0085b2;
+	font-size: 75%;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 10px; 
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;   /* Firefox用 */  
 }
