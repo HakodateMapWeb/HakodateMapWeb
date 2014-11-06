@@ -172,9 +172,9 @@ a {
 
 .js .fixed-bar {
 	position: fixed;
-	width: 100%;
-	left: 0;
-	bottom: 0;
+	width: 90%;
+	left: 150px;
+
 }
 
 .js .gallery {

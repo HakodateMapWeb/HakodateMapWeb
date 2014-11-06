@@ -7,37 +7,25 @@
 		<script src="js/modernizr.custom.17475.js"></script>
     </head>
 <body>
-<?php
-$str = $spotList['1']['image'];
-//echo "<img src= ";
-//echo $str;
-//echo ">";
-?>
+
+
 
 		<div class="fixed-bar">
 					<!-- Elastislide Carousel -->
-					<ul id="carousel" class="elastislide-list">
-						<li><a href="#"><img src= <?php echo $str;?> width="163" height="163"　alt="image01" /></a></li>
-						<li><a href="#"><img src= <?php echo $str;?> width="163" height="163"　alt="image02" /></a></li>
-						<li><a href="#"><img src= <?php echo $str;?> width="163" height="163"　alt="image03" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>  width="163" height="163"alt="image04" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image05" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image06" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image07" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image08" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image09" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image10" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?> width="163" height="163" alt="image11" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image12" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image13" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image14" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image15" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image16" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image17" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image18" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image19" /></a></li>
-						<li><a href="#"><img src=<?php echo $str;?>　width="163" height="163" alt="image20" /></a></li>
-					</ul>
+			<ul id="carousel" class="elastislide-list">
+			<?php
+				for ($i = 1; $i <= 10; $i++) {
+					$str = $spotList[$i]['image'];
+					echo "<li><a href= \"#\">";
+					echo "<img src = \"";
+ 					echo $str;
+ 					echo "\"width=\"163\" height=\"163\" alt=\"image";
+ 					echo $i;
+ 					echo "\"/>";
+ 					echo "</a></li>";
+				}
+			?>
+			</ul>
 
 				</div>
 			</div>
