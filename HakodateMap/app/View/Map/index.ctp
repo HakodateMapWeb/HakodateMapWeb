@@ -1,4 +1,3 @@
-
 <?php echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true', false); ?>
 <?php
 
@@ -48,33 +47,9 @@ $map_options = array (
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>sampleMap</title> 
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-
-
  <script src="http://code.jquery.com/jquery-latest.js"></script>
  <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
  <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
-
-
-<style>
-	#sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-	#sortable li { margin: 3px 3px 0 5px; padding: 0px; float: left; width: 10%; height: 75%; font-size: 120%; text-align: center; }
-</style>
-
- <script>
-	$(function() {
-	$( "#sortable" ).sortable({ axis: 'x', containment : 'parent',  cursor : 'move', cursorAt : { left : 50, top: 30}  });
-	$( "#sortable" ).disableSelection();
-	});
-</script>
-
 
 <script type="text/javascript"><!--
 function ChangeTab(tabname) {
@@ -83,6 +58,14 @@ function ChangeTab(tabname) {
    document.getElementById('tab2').style.display = 'none';
    // 指定箇所のみ表示
    document.getElementById(tabname).style.display = 'block';
+}
+// --></script>
+
+<script type="text/javascript"><!--
+//ここでlistに要素を追加
+function addlist(sample) {
+	$("#list").append('<li id="TEST" class="dropme">'+sample+'</li>');
+    $("#list").sortable('refresh');
 }
 // --></script>
 
@@ -101,12 +84,25 @@ function ChangeTab(tabname) {
 		$i++;
 	} ?>
 	
+	
+	<div class="cake.web effect1" style="position:absolute; right:20px; top:10px;　min-width:300px">
+		<div class="cb" style="background:#fa8072; border-bottom:2px solid #e55444;"><input type="checkbox" name="" value="test1">イベント</div>
+		<div class="cb" style="background:#f9cc72; border-bottom:2px solid #e59900;"><input type="checkbox" name="" value="test2">食べる</div>
+		<div class="cb" style="background:#89f972; border-bottom:2px solid #35b235;"><input type="checkbox" name="" value="test3">見る</div>
+		<div class="cb" style="background:#72e3f9; border-bottom:2px solid #359db2;"><input type="checkbox" name="" value="test4">遊ぶ</div>
+		<div class="cb" style="background:#95a6f9; border-bottom:2px solid #3574b2;"><input type="checkbox" name="" value="test5">買う</div>
+		<div class="cb" style="background:#f9aef9; border-bottom:2px solid #e544e5;"><input type="checkbox" name="" value="test6">温泉</div>
+	</div>
 
-
-	<div class="cake.web effect1" style="position:absolute; right:20px; bottom:20%; width: 200px; height:75%; background-color:rgba(255, 255, 255, 1);">
+	<div class="cake.web effect1" style="position:absolute; right:20px; top:50px; width: 200px; height:20px background-color:rgba(255, 255, 255, 1);">
 			<div class="tabbox">
 			    <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">タブ1</a>
 			    <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">タブ2</a>
+			</div>
+
+	</div>
+	<div class="cake.web effect2" style="position:absolute; right:20px; top:90px; width: 200px; height:65%; background-color:rgba(255, 255, 255, 1);">
+			<div class="tabbox">
 			   <div id="tab1">
 			      <p>
 			      (タブ1の中身) <br>
@@ -142,7 +138,7 @@ function ChangeTab(tabname) {
 		<div id="bucket" class="drop">
         	<p>
         	ゴミ箱 <br>
-        	消したいものはここへドラック
+        	ここへドラック
         	</p>
    		</div>	
 		
@@ -153,10 +149,14 @@ function ChangeTab(tabname) {
 	    <li id="test-4" class="dropme">Four</li>
 	    </ul>
 	    
-   		<script>
+	    <!-- addlist('引数')でlistに出力 -->
+	    <div class="btn" onClick="addlist('テストです。')">Sample Add</div>
+	    
+	    <script>
         $("#list").sortable({
         containment : 'document',
         cursor : 'move',
+        opacity: 0.7,
         items: 'li',
         stop: function(event, ui) { 
             if (deleteMe) {
@@ -172,7 +172,7 @@ function ChangeTab(tabname) {
 	        accept: '.dropme'
 	    });
 	    </script>
-
+	    
 	</div>
 </footer>
 

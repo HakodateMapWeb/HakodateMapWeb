@@ -219,6 +219,9 @@ body {
 .effect1 {
     box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.3);
 }
+.effect2 {
+    box-shadow: 3px 6px 10px 4px rgba(0, 0, 0, 0.3);
+}
 	
 .tabbox {
 	width: 100%;
@@ -228,6 +231,7 @@ body {
 	    float: left;
 	    cursor: pointer;
 	    width: 50%;
+	    height: 100%;
 	    margin: 0;
 	    padding: 12px 0px;
 	    font-size: 75%;
@@ -251,7 +255,7 @@ body {
 		background: #4af9b6;
 	}
 	.tabbox div {
-		height: 80%;
+		height: 100%;
 		overflow: auto;
 		clear: left;
 	}
@@ -271,14 +275,19 @@ body {
 	width: 100%;
 }
 .sortable_li li{
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chromeなど */
+	-ms-user-select: none; /* IE10*/
 	display: block;
 	float: left;
 	cursor: pointer;
 	width: 70px;
 	height:20px;
-	margin: 10px 5px 0 5px;
+	margin: 5px 5px 0 0;
 	padding: 12px 0px;
 	border:2px solid #0085b2;
+	border-bottom: 5px solid #0085b2;
 	font-size: 75%;
 	text-align: center;
 	background: #ffffff;
@@ -286,19 +295,68 @@ body {
     -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
     -moz-border-radius: 10px;   /* Firefox用 */  
 }
+.sortable_li li:hover{
+	border-bottom: 2px solid #0085b2;
+	margin: 8px 5px 0 0;
+}
 
 .drop {
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chromeなど */
+	-ms-user-select: none; /* IE10かららしい */
 	display: block;
 	float: left;
 	width: 130px;
 	height:20px;
-	margin: 10px 5px 0 5px;
+	margin: 5px 5px 0 5px;
 	padding: 12px 0px;
 	border:2px solid #0085b2;
+	border-bottom: 5px solid #0085b2;
 	font-size: 75%;
 	text-align: center;
 	background: #ffffff;
 	border-radius: 10px; 
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
-    -moz-border-radius: 10px;   /* Firefox用 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 10px;   /* Firefox用 */
+    cursor: default;
 }
+
+.cb{
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chromeなど */
+	-ms-user-select: none; /* IE10かららしい */
+	display: block;
+	float: left;
+	height: 25px;
+	margin: auto;
+	padding: 1px 5px;
+	color: #ffffff;
+	cursor: default;
+}
+
+.btn{
+	user-select: none; /* CSS3 */
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Safari、Chromeなど */
+	-ms-user-select: none; /* IE10かららしい */
+	display: block;
+	float: right;
+	cursor: pointer;
+	height: 25px;
+	margin: auto;
+	padding: 1px 5px;
+	color: #ff8c00;
+	background: #ffffff;
+	border:2px solid #ff8c00;
+	border-bottom: 5px solid #ff8c00;
+	border-radius: 10px; 
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 10px;   /* Firefox用 */
+}
+.btn:hover{
+	border-bottom: 2px solid #ff8c00;
+	margin: 3px 0 0 0;
+}
+
