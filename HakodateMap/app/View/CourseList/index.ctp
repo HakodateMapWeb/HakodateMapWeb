@@ -9,6 +9,7 @@ foreach ( $courseList as $course ) {
 			break;
 		}
 	}
+	
 	$count = 1;
 	$image = $course ['image'];
 	$name = $course ['courseName'];

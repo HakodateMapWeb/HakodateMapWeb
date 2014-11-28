@@ -37,11 +37,6 @@ $map_options = array (
 		'longitude' => $long,
 		// 'address' => '',
 		'marker' => false,
-		//'markerTitle' => 'Future University Hakodate',
-		//'markerIcon' => 'http://google-maps-icons.googlecode.com/files/home.png',
-		//'markerShadow' => 'http://google-maps-icons.googlecode.com/files/shadow.png',
-		//'infoWindow' => true,
-		//'windowText' => 'Future University Hakodate\n'
 );
 ?>
 <!DOCTYPE html>
