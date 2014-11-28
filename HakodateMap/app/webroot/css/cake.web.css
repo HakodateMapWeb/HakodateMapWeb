@@ -37,11 +37,11 @@ img, input, select, textarea {
 
 /*デフォルトリンク色の設定*/
 a {
-	color: #00C4AB;
+	color: #00A5FF;/*#00C4AB*/
 }
 
 a:hover {
-	color: #CCE739;
+	color: #FF9000;/*#CCE739*/
 }
 
 /*画像リンクの設定*/
@@ -115,14 +115,14 @@ body {
 #gnav li {
 	float: left;
 	width: 100%;
-	border-bottom: #fff 1px solid;
+	border-bottom: #5BDEFF 2px solid;
 }
 
 #gnav li.gnav01 {
 	float: left;
 	width: 100%;
-	border-top: #fff 1px solid;
-	border-bottom: #fff 1px solid;
+	border-top: #5BDEFF 2px solid;
+	border-bottom: #5BDEFF 2px solid;
 }
 
 #gnav a {
@@ -131,10 +131,31 @@ body {
 	text-align: left;
 	text-decoration: none;
 	color: #fff;
+	transition: .2s;
+}
+
+#gnav a:after{
+	display: block;
+	content: "  ";
+	float: right;
+	top: 50%;
+	width: 6px;
+	height: 6px;
+	margin: 5px -5px 0px 0px;
+	border-top: solid 2px #fff;
+	border-right: solid 2px #fff;
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -o-transform: rotate(45deg);
+    transition: .2s;
 }
 
 #gnav a:hover {
-	background: #cce739;
+	background: #72DBFF;/*#cce739*/
+}
+#gnav a:hover:after {
+	margin: 5px -10px 0px 0px;
 }
 
 #gnav a.selected {
@@ -162,7 +183,7 @@ body {
 
 #content {
 	background: #ffffff;
-	color: #00c4ab;
+	color: #666;/*#00c4ab*/
 	/*float: left;*/
 	position: relative;
 	width: 100% -150px;
@@ -174,7 +195,7 @@ body {
 
 #box {
 	background: #ffffff;
-	color: #00c4ab;
+	color: #666;/*#00c4ab*/
 	float: left;
 	position: relative;
 	width: 100%;
