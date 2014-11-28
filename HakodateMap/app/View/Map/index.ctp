@@ -12,7 +12,7 @@ if(isset($spotList[0])){
 	$long = 140.726426;
 }
 
-		
+/*
 $map_options = array (
 		'id' => 'hakodate',
 		'width' => '100%',
@@ -38,6 +38,7 @@ $map_options = array (
 		// 'address' => '',
 		'marker' => false,
 );
+*/
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -96,10 +97,24 @@ jQuery( function() {
 // -->
 </script>
 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+  function initialize() {
+    var latlng = new google.maps.LatLng(-34.397, 150.644);
+    var myOptions = {
+      zoom: 8,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  }
+</script>
+
 </head>
-<body>
-	<?php echo $this->GoogleMap->map($map_options); ?>
-	<?php $i = 0;
+<body onload="initialize()">
+<div id="map_canvas" style="width:100%; height:90%"></div>
+	<?php //echo $this->GoogleMap->map($map_options); ?>
+	<?php /*$i = 0;
 	foreach($spotList as $spot){
 		$marker_options = array(
     	'showWindow' => true,
@@ -109,7 +124,7 @@ jQuery( function() {
   		);
 		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['long']), $marker_options);
 		$i++;
-	} ?>
+	} */?>
 	
 	
 	<div class="cake.web effect1" style="position:absolute; right:20px; top:10px;　min-width:300px">
