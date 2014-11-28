@@ -110,7 +110,7 @@ body {
 #gnav img {
 	float: left;
 	width: 100%;
-	height: 150px;
+	/*height: 150px;*/
 }
 
 #gnav li {
@@ -151,12 +151,13 @@ body {
 }
 
 #gnav input.text {
-	float:left;
-	width: 80%-10px;
+	float: left;
+	position: absolute;
+	width: 80%;
 }
 
 #gnav input.submit {
-	float: right;
+	float: left;
 	width: 40px;
 }
 
@@ -214,149 +215,3 @@ body {
 	width: 940px;
 	margin: 0 auto;
 }
-
-/*Mapから移植*/
-.effect1 {
-    box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.3);
-}
-.effect2 {
-    box-shadow: 3px 6px 10px 4px rgba(0, 0, 0, 0.3);
-}
-	
-.tabbox {
-	width: 100%;
-	}
-	.tabbox a{
-	 	display: block;
-	    float: left;
-	    cursor: pointer;
-	    width: 50%;
-	    height: 100%;
-	    margin: 0;
-	    padding: 12px 0px;
-	    font-size: 75%;
-	    text-align: center;
-	    transition: .2s;
-	}
-	.tabbox a.tab1 {
-		background-color: 00bfff;
-		color: white;
-		border-bottom: 3px solid #0085b2;
-	}
-	.tabbox a.tab2 {
-		background-color: #00fa9a;
-		color: white;
-		border-bottom: 3px solid #00cc7d;
-	}
-	.tabbox a.tab1:hover{
-		background: #4cd2ff;
-	}
-	.tabbox a.tab2:hover{
-		background: #4af9b6;
-	}
-	.tabbox div {
-		height: 100%;
-		overflow: auto;
-		clear: left;
-	}
-	.tabbox div.ImageArea{
-		margin: 0 auto; 
-		height:50px;
-		display: block;
-		float: center;
-		border: 0px;
-		padding: 12px 0px;
-		width: 80%;
-		background: #add8e6;
-		text-align: center;
-	}
-	
-.sortable_li{
-	width: 100%;
-}
-.sortable_li li{
-	user-select: none; /* CSS3 */
-	-moz-user-select: none; /* Firefox */
-	-webkit-user-select: none; /* Safari、Chromeなど */
-	-ms-user-select: none; /* IE10*/
-	display: block;
-	float: left;
-	cursor: pointer;
-	width: 70px;
-	height:20px;
-	margin: 5px 5px 0 0;
-	padding: 12px 0px;
-	border:2px solid #0085b2;
-	border-bottom: 5px solid #0085b2;
-	font-size: 75%;
-	text-align: center;
-	background: #ffffff;
-	border-radius: 10px;
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
-    -moz-border-radius: 10px;   /* Firefox用 */  
-}
-.sortable_li li:hover{
-	border-bottom: 2px solid #0085b2;
-	margin: 8px 5px 0 0;
-}
-
-.drop {
-	user-select: none; /* CSS3 */
-	-moz-user-select: none; /* Firefox */
-	-webkit-user-select: none; /* Safari、Chromeなど */
-	-ms-user-select: none; /* IE10かららしい */
-	display: block;
-	float: left;
-	width: 130px;
-	height:20px;
-	margin: 5px 5px 0 5px;
-	padding: 12px 0px;
-	border:2px solid #0085b2;
-	border-bottom: 5px solid #0085b2;
-	font-size: 75%;
-	text-align: center;
-	background: #ffffff;
-	border-radius: 10px; 
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
-    -moz-border-radius: 10px;   /* Firefox用 */
-    cursor: default;
-}
-
-.cb{
-	user-select: none; /* CSS3 */
-	-moz-user-select: none; /* Firefox */
-	-webkit-user-select: none; /* Safari、Chromeなど */
-	-ms-user-select: none; /* IE10かららしい */
-	display: block;
-	float: left;
-	height: 25px;
-	margin: auto;
-	padding: 1px 5px;
-	color: #ffffff;
-	cursor: default;
-}
-
-.btn{
-	user-select: none; /* CSS3 */
-	-moz-user-select: none; /* Firefox */
-	-webkit-user-select: none; /* Safari、Chromeなど */
-	-ms-user-select: none; /* IE10かららしい */
-	display: block;
-	float: right;
-	cursor: pointer;
-	height: 25px;
-	margin: auto;
-	padding: 1px 5px;
-	color: #ff8c00;
-	background: #ffffff;
-	border:2px solid #ff8c00;
-	border-bottom: 5px solid #ff8c00;
-	border-radius: 10px; 
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
-    -moz-border-radius: 10px;   /* Firefox用 */
-}
-.btn:hover{
-	border-bottom: 2px solid #ff8c00;
-	margin: 3px 0 0 0;
-}
-

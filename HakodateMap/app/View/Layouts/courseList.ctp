@@ -22,9 +22,9 @@ echo $scripts_for_layout;
 				<li class="gnav04"><a href="../HakodateMap/Map">MAP</a></li>
 			</ul>
 			<form method="post" action="./Map" name="search">
-				<input type="text" name="spotName" class="text"> <input
-					type="submit" value="検索" class="submit">
+				<input type="text" name="spotName" placeholder="キーワード検索" class="text">
 			</form>
+			<img src="appstore.png" alt="appstore_rogo">
 		</div>
 		<div id="content">
 		<?php echo $content_for_layout; ?>
