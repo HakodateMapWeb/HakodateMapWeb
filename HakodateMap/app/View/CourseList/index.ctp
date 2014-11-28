@@ -1,5 +1,4 @@
 <!--<?php
-
 for($i = 0; $i < 10; $i ++) {
 	echo "<div id=\"gnav\">
 	<ul>
@@ -15,11 +14,19 @@ for($i = 0; $i < 10; $i ++) {
 }
 ?>-->
 
-<html>
+<html class="no-js">
 <head>
 <title>Index Page</title>
-
-	<div id="ti" class="title"><p><b>COURSELIST</b></p></div>
+<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+<script src="js/modernizr.custom.17475.js"></script>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<div id="ti" class="title">
+	<p>
+		<b>COURSELIST</b>
+	</p>
+</div>
 
 </head>
 <body>
@@ -29,7 +36,7 @@ foreach ( $courseList as $course ) {
 	echo ": " . $course ['image'];
 	echo "<br/>";
 	foreach ( $courseListSpot as $courseSpot ) {
-		if(strcmp($course ['courseName'], $courseSpot['courseName'])){
+		if (strcmp ( $course ['courseName'], $courseSpot ['courseName'] )) {
 			echo $courseSpot ['spotList'];
 			break;
 		}
@@ -43,7 +50,7 @@ foreach ( $courseList as $course ) {
 	<li class=\"box0$count\"><img src=\"$image\" alt=\"$name\"></li>
 	</ul>
 	</div>";
-	$count++;
+	$count ++;
 }
 ?>
 </body>
