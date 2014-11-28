@@ -110,7 +110,7 @@ body {
 #gnav img {
 	float: left;
 	width: 100%;
-	height: 150px;
+	/*height: 150px;*/
 }
 
 #gnav li {
@@ -151,12 +151,13 @@ body {
 }
 
 #gnav input.text {
-	float:left;
-	width: 80%-10px;
+	float: left;
+	position: absolute;
+	width: 80%;
 }
 
 #gnav input.submit {
-	float: right;
+	float: left;
 	width: 40px;
 }
 

@@ -71,6 +71,31 @@ class HomeController extends AppController {
 
 		return $url;
 	}
+	
+	//全スポットのスポット名，カテゴリ，画像urlを問い合わせるurlを生成する
+	function categoryQuery($selectCategory){
+		$query = "
+				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+				PREFIX schema: <http://schema.org/>
+	
+				SELECT DISTINCT ?spotName ?category ?image
+	
+				FROM <file:///var/lib/4store/hakobura_akiba.rdf>
+	
+				WHERE {
+  					GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
+   						?hs rdfs:comment \"".$selectCategory."\";
+						rdfs:comment ?category; 
+						rdfs:label ?spotName;
+						schema:image ?image.
+					}
+				}";
+	
+		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query='.
+				urlencode($query).'&output=json';
+	
+		return $url;
+	}
 
 	public $name = 'Home';
 	public $uses = null;
@@ -80,6 +105,13 @@ class HomeController extends AppController {
 		$obj=HomeController::runQuery(HomeController::topQuery());
 		$spotList=(HomeController::parse($obj));
 		$this->set('spotList',$spotList);
+		
+		//カテゴリ指定サンプル
+		//categoryQueryに文字列として指定カテゴリを渡せばそのカテゴリの全スポットを取得します
+		$eat = HomeController::runQuery(HomeController::categoryQuery('見る'));
+		$eatList=(HomeController::parse($eat));
+		print_r($eatList);
+		//サンプルここまで
 	}
 	public function home() {
 
