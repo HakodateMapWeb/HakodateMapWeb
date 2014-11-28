@@ -24,7 +24,8 @@ echo $scripts_for_layout;
 			<form method="post" action="./Map" name="search">
 				<input type="text" name="spotName" placeholder="キーワード検索" class="text">
 			</form>
-			<img src="appstore.png" alt="appstore_rogo">
+			<?php echo $this->Html->image('appstore.png'); ?>
+			<?php echo $this->Html->image('googleplay.png'); ?>
 		</div>
 		<div id="content">
 		<?php echo $content_for_layout; ?>
