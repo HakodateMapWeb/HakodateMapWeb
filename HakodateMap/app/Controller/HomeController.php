@@ -105,8 +105,7 @@ class HomeController extends AppController {
 		$obj=HomeController::runQuery(HomeController::topQuery());
 		$spotList=(HomeController::parse($obj));
 		$this->set('spotList',$spotList);
-		
-		//カテゴリ指定サンプル
+
 		//categoryQueryに文字列として指定カテゴリを渡せばそのカテゴリの全スポットを取得します
 		$eat = HomeController::runQuery(HomeController::categoryQuery('見る'));
 		$eatList=(HomeController::parse($eat));
