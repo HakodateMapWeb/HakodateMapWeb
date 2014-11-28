@@ -102,15 +102,33 @@ class HomeController extends AppController {
 	public $layout = "Home";
 	public function index() {
 		// $this -> autoRender = true;
-		$obj=HomeController::runQuery(HomeController::topQuery());
+		/*$obj=HomeController::runQuery(HomeController::topQuery());
 		$spotList=(HomeController::parse($obj));
-		$this->set('spotList',$spotList);
+		$this->set('spotList',$spotList);*/
+		
+		$events = HomeController::runQuery(HomeController::categoryQuery('イベント'));
+		$eventsList=(HomeController::parse($events));
+		$this->set('eventsList',$eventsList);
+		
+		$view = HomeController::runQuery(HomeController::categoryQuery('見る'));
+		$viewList=(HomeController::parse($view));
+		$this->set('viewList',$viewList);
+		
+		$play = HomeController::runQuery(HomeController::categoryQuery('遊ぶ'));
+		$playList=(HomeController::parse($play));
+		$this->set('playList',$playList);
+		
+		$shop = HomeController::runQuery(HomeController::categoryQuery('買う'));
+		$shopList=(HomeController::parse($shop));
+		$this->set('shopList',$shopList);
 		
 		//カテゴリ指定サンプル
 		//categoryQueryに文字列として指定カテゴリを渡せばそのカテゴリの全スポットを取得します
-		$eat = HomeController::runQuery(HomeController::categoryQuery('見る'));
+		$eat = HomeController::runQuery(HomeController::categoryQuery('食べる'));
 		$eatList=(HomeController::parse($eat));
-		print_r($eatList);
+		$this->set('eatList',$eatList);
+	
+		//print_r($eatList);
 		//サンプルここまで
 	}
 	public function home() {
