@@ -1,4 +1,7 @@
 <?php echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true', false); ?>
+
+<?php echo $this->Html->script('jquery.cookie.js'); ?>
+
 <?php
 
 if(isset($spotList[0])){
@@ -63,6 +66,35 @@ function addlist(sample) {
     $("#list").sortable('refresh');
 }
 // --></script>
+
+<script>
+<!--
+// Sortableのメインです
+jQuery( function() {
+	jQuery( '#list' ) . sortable();
+    jQuery( '#list' ) . disableSelection();
+	jQuery('#list').sortable({
+       	containment : 'document',
+        cursor : 'move',
+        opacity: 0.7,
+        items: 'li',
+        stop: function(event, ui) {
+            if (deleteMe) {
+                        ui.item.remove();
+                        deleteMe = false;
+                    }
+       		}
+    	    });
+       
+	 jQuery('#bucket').droppable({
+	        drop: function(event, ui) {
+	            deleteMe = true; 
+	        },
+	        accept: '.dropme'
+	    });
+} );
+// -->
+</script>
 
 </head>
 <body>
@@ -146,28 +178,7 @@ function addlist(sample) {
 	    
 	    <!-- addlist('引数')でlistに出力 -->
 	    <div class="btn" onClick="addlist('テストです。')">Sample Add</div>
-	    
-	    <script>
-        $("#list").sortable({
-        containment : 'document',
-        cursor : 'move',
-        opacity: 0.7,
-        items: 'li',
-        stop: function(event, ui) { 
-            if (deleteMe) {
-                        ui.item.remove();
-                        deleteMe = false;
-                    }
-       		}
-	    });   
-	    $('#bucket').droppable({
-	        drop: function(event, ui) {
-	            deleteMe = true; 
-	        },
-	        accept: '.dropme'
-	    });
-	    </script>
-	    
+
 	</div>
 </footer>
 
