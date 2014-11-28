@@ -1,10 +1,10 @@
 <html class="no-js"><!--<![endif]-->
     <head>
-		<!--<link rel="stylesheet" type="text/css" href="css/elastislide.css" />	
-		<script src="js/modernizr.custom.17475.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />	
+		<script src="js/modernizr.custom.17475.js"></script>
 		<link rel="stylesheet" href="flexslider.css" type="text/css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script src="jquery.flexslider.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="jquery.flexslider.js"></script>-->
     </head>
 <body>
 
