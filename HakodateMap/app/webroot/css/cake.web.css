@@ -1,6 +1,5 @@
 @CHARSET "UTF-8";
 /*リセットCSS + サイト共通設定*/
-
 /*全ての要素に対する余白初期値設定*/
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, li, table, th, td,
 	form, select, option, input
