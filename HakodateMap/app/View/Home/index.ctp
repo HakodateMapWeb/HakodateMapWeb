@@ -1,28 +1,13 @@
 <html class="no-js"><!--<![endif]-->
     <head>
-		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />	
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 		<script src="js/modernizr.custom.17475.js"></script>
-		<link rel="stylesheet" href="flexslider.css" type="text/css">
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script src="jquery.flexslider.js"></script>-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
     </head>
 <body>
 
-<!--<div class="flexslider">
-  <ul class="slides">
-  	<?php echo "<li><img src = \"" . $eatList[1]['image'] ."\"titole=\"test\" /></li>";?>
-  	<?php echo "<li><img src = \"" . $eatList[2]['image'] ."\"titole=\"test\" /></li>";?>
-  	<?php echo "<li><img src = \"" . $eatList[3]['image'] ."\"titole=\"test\" /></li>";?>
-  </ul>
-</div>-->
 
-
-
-<p><font size = "6" color ="#000000">イベント</p>
-<BR>
-
-
-<HR color = "blue" size = "6">
 <h1>食べる</h1>
 <BR>
 		<div id = "fixed-bar">
@@ -87,9 +72,6 @@
 			</ul>
 		</div>
 	<BR>		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
-		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
 		<script type="text/javascript">
 			$( '#events_carousel' ).elastislide( {
 				minItems : 2
@@ -115,11 +97,6 @@
 				minItems : 2
 			} );
 		</script>
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
 		
 </body>
 </html>

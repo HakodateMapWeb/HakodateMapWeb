@@ -107,9 +107,21 @@ class HomeController extends AppController {
 		$this->set('spotList',$spotList);
 
 		//categoryQueryに文字列として指定カテゴリを渡せばそのカテゴリの全スポットを取得します
-		$eat = HomeController::runQuery(HomeController::categoryQuery('見る'));
+		$eat = HomeController::runQuery(HomeController::categoryQuery('食べる'));
 		$eatList=(HomeController::parse($eat));
-		print_r($eatList);
+		$this->set('eatList',$eatList);
+		
+		$view = HomeController::runQuery(HomeController::categoryQuery('見る'));
+		$viewList=(HomeController::parse($view));
+		$this->set('viewList',$viewList);
+		
+		$play = HomeController::runQuery(HomeController::categoryQuery('遊ぶ'));
+		$playList=(HomeController::parse($play));
+		$this->set('playList',$playList);
+		
+		$shop = HomeController::runQuery(HomeController::categoryQuery('買う'));
+		$shopList=(HomeController::parse($shop));
+		$this->set('shopList',$shopList);
 		//サンプルここまで
 	}
 	public function home() {
