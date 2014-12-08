@@ -6,10 +6,10 @@
 
 if(isset($spotList[0])){
 	$lat = $spotList['0']['lat'];
-	$long = $spotList['0']['long'];
+	$lng = $spotList['0']['lng'];
 }else{
 	$lat = 41.773922;
-	$long = 140.726426;
+	$lng = 140.726426;
 }
 
 /*
@@ -34,7 +34,7 @@ $map_options = array (
 		
 		',
 		'latitude' => $lat,
-		'longitude' => $long,
+		'longitude' => $lng,
 		// 'address' => '',
 		'marker' => false,
 );
@@ -99,21 +99,51 @@ jQuery( function() {
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
+  //マップの諸々の設定やピンの配置など
   function initialize() {
+	//マップ自体の設定
     var latlng = new google.maps.LatLng(41.773922, 140.726426);
-    
     var myOptions = {
       zoom: 15,
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+    //phpからjsへ$spotListの受け渡し
+    <?php $spotList_json = json_encode($spotList);?>
+    var markerData = '<?php $spotList_json; ?>';
+    
+    for (i = 0;i < markerData.length;i++)
+    	//受け取った配列から実際のマーカーを生成
+    	var marker = new google.maps.Marker({  
+       	 	position: new google.maps.LatLng(markerData[i].lat, markerData[i].lng),  
+        	title: markerData[i].name
+    	});
+    
+    	//生成したマーカーを地図に表示
+    	marker.setMap(map);
+  	}
+
+
+    /*
+	foreach($spotList as $spot){
+		$marker = array(
+		'windowText' => $spot['spotName'],
+    	'markerTitle' => $spot['spotName'],
+   		'markerShadow' => 'http://labs.google.com/ridefinder/images/mm_20_purpleshadow.png',
+  		);
+		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['lng']), $marker_options);
+		$i++;
+	}
+	*/
   }
 </script>
 
 </head>
 <body onload="initialize()">
-<div id="map_canvas" style="width:100%; height:90%"></div>
+<div id="map" style="width:100%; height:90%"></div>
+<?php print_r($spotList_json);?>
 	<?php //echo $this->GoogleMap->map($map_options); ?>
 	<?php /*$i = 0;
 	foreach($spotList as $spot){
@@ -123,7 +153,7 @@ jQuery( function() {
     	'markerTitle' => $spot['spotName'],
    		'markerShadow' => 'http://labs.google.com/ridefinder/images/mm_20_purpleshadow.png',
   		);
-		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['long']), $marker_options);
+		echo $this->GoogleMap->addMarker('hakodate', $i, array('latitude' => $spot['lat'], 'longitude' => $spot['lng']), $marker_options);
 		$i++;
 	} */?>
 	
@@ -151,9 +181,7 @@ jQuery( function() {
 			      (タブ1の中身) <br>
 					あいうえおかきくけこさしすせそたちつてと<br>
 			      <?php 
-			      	for($i = 0; $i <= 20; $i++){
-						printf("　・　test[%02d] <br>", $i);
-					}
+						print_r($spotList);
 			      ?>
 			      </p>
 			   </div>

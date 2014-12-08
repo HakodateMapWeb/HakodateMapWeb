@@ -86,7 +86,7 @@ class MapController extends AppController {
 				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 				PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 	
-				SELECT DISTINCT ?spotName ?lat ?long ?category
+				SELECT DISTINCT ?spotName ?lat ?lng ?category
 	
 				FROM <file:///var/lib/4store/hakobura_akiba.rdf>
 	
@@ -94,7 +94,7 @@ class MapController extends AppController {
   					GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
    						?hs rdfs:label ?spotName;
     					geo:lat ?lat;
-    					geo:long ?long;
+    					geo:long ?lng;
 						rdfs:comment ?category;
     					FILTER regex (?spotName,\"".$spotName."\",\"i\").
  						}
@@ -112,7 +112,7 @@ class MapController extends AppController {
 				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 				PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 	
-				SELECT DISTINCT ?spotName ?lat ?long ?category
+				SELECT DISTINCT ?spotName ?lat ?lng ?category
 	
 				FROM <file:///var/lib/4store/hakobura_akiba.rdf>
 	
@@ -120,7 +120,7 @@ class MapController extends AppController {
   					GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
    						?hs rdfs:label ?spotName;
     					geo:lat ?lat;
-    					geo:long ?long;
+    					geo:long ?lng;
 						rdfs:comment ?category;
     					FILTER regex (?spotName,\"".$spotName."\",\"i\")
 						FILTER regex (?category,\"".$category."\",\"i\").
