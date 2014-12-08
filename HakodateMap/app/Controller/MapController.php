@@ -8,7 +8,7 @@ class MapController extends AppController {
 	public $uses = null;
 	//public $autoLayout;
 	//public $autoRender;
-	public $layout = "Map";
+	public $layout = "Gnav";
 	// public $helpers = array('GoogleMap'); // Adding the helper
 	
 	public function index() {

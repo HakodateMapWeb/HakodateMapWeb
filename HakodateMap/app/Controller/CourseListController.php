@@ -66,40 +66,40 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 	// 画像を持たないコースは一切取得されないのでcourseNameAllと合わせて何とかされたし
 	function courseImage() {
 		$query = '
-	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	PREFIX schema: <http://schema.org/>
-	PREFIX dc: <http://purl.org/dc/elements/1.1/>
-	
-	SELECT DISTINCT ?courseName ?spotName ?image  WHERE {
-		GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
-		?s rdfs:label ?courseName;
-		dc:relation ?mspotURI.
-		?mspotURI schema:name ?spotName.
-	
-	}GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
-	?hspotName rdfs:label ?spotName;
-	schema:image ?image.
-	}
-	}';
-		
+				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+				PREFIX schema: <http://schema.org/>
+				PREFIX dc: <http://purl.org/dc/elements/1.1/>
+				
+				SELECT DISTINCT ?courseName ?spotName ?image  WHERE {
+				GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
+				?s rdfs:label ?courseName;
+				dc:relation ?mspotURI.
+				?mspotURI schema:name ?spotName.
+				
+				}GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
+				?hspotName rdfs:label ?spotName;
+				schema:image ?image.
+				}
+				}';
+
 		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query=' . urlencode ( $query ) . '&output=json';
-		
+
 		return $url;
 	}
 	
 	// 全コース名とそのスポットのリストを取得する
 	function courseSpotList() {
 		$query = '
-	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX schema: <http://schema.org/>
-
-SELECT ?courseName ?spotList FROM <file:///var/lib/4store/machiarukiinfo.rdf>
-WHERE {
- ?s rdfs:label ?courseName;
- schema:name ?spotList.
-}';
+				PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+				PREFIX dc: <http://purl.org/dc/elements/1.1/>
+				PREFIX schema: <http://schema.org/>
+				
+				SELECT ?courseName ?spotList FROM <file:///var/lib/4store/machiarukiinfo.rdf>
+				WHERE {
+	 			?s rdfs:label ?courseName;
+	 			schema:name ?spotList.
+				}';
 		
 		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query=' . urlencode ( $query ) . '&output=json';
 		
@@ -107,7 +107,7 @@ WHERE {
 	}
 	public $name = 'CourseList';
 	public $uses = null;
-	public $layout = "CourseList";
+	public $layout = "Gnav";
 	public function index() {
 		// $this -> autoRender = true;
 		CourseListController::courselist ();

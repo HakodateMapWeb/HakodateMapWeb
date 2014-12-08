@@ -4,7 +4,7 @@ class AboutController extends AppController {
 		
 	public $name = 'About';
 	public $uses = null;
-	public $layout = "About";
+	public $layout = "Gnav";
 	public function index() {
 		// $this -> autoRender = true;
 	}

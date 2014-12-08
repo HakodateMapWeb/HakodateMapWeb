@@ -99,7 +99,7 @@ class HomeController extends AppController {
 
 	public $name = 'Home';
 	public $uses = null;
-	public $layout = "Home";
+	public $layout = "Gnav";
 	public function index() {
 		// $this -> autoRender = true;
 		$obj=HomeController::runQuery(HomeController::topQuery());
