@@ -16,16 +16,19 @@ echo $scripts_for_layout;
 		<div id="gnav">
 			<img src="" alt="">
 			<ul>
-				<li class="gnav01"><a href="<?php echo $this->Html->url('/Home', true); ?>">HOME</a></li>
-				<li class="gnav02"><a href="<?php echo $this->Html->url('/About', true); ?>">ABOUT</a></li>
-				<li class="gnav03"><a href="<?php echo $this->Html->url('/CourseList', true); ?>">COURSELIST</a></li>
-				<li class="gnav04"><a href="<?php echo $this->Html->url('/Map', true); ?>">MAP</a></li>
+				<li class="gnav01"><a
+					href="<?php echo $this->Html->url('/Home', true); ?>">HOME</a></li>
+				<li class="gnav02"><a
+					href="<?php echo $this->Html->url('/About', true); ?>">ABOUT</a></li>
+				<li class="gnav03"><a
+					href="<?php echo $this->Html->url('/CourseList', true); ?>">COURSELIST</a></li>
+				<li class="gnav04"><a
+					href="<?php echo $this->Html->url('/Map', true); ?>">MAP</a></li>
 			</ul>
 			<form method="post" action="./Map" name="search">
-				<input type="text" name="spotName" placeholder="キーワード検索" class="text">
+				<input type="text" name="spotName" placeholder="キーワード検索"
+					class="text">
 			</form>
-			<?php echo $this->Html->image('appstore.png'); ?>
-			<?php echo $this->Html->image('googleplay.png'); ?>
 		</div>
 		<div id="content">
 		<?php echo $content_for_layout; ?>
