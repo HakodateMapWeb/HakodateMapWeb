@@ -157,5 +157,6 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 		}
 		$this->set ( 'courseList', $courseList );
 		$this->set ( 'courseListSpot', $courseListSpot );
+		//print_r($courseImageList);
 	}
 }
