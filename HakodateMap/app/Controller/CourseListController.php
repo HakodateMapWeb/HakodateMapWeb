@@ -107,7 +107,7 @@ GRAPH <file:///var/lib/4store/machiaruki_akiba.rdf>{
 	}
 	public $name = 'CourseList';
 	public $uses = null;
-	public $layout = "Gnav";
+	public $layout = "gnav";
 	public function index() {
 		// $this -> autoRender = true;
 		CourseListController::courselist ();
