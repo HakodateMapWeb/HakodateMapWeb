@@ -1,3 +1,13 @@
+<link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
+<script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="jquery.simplyscroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+(function($) {
+	$(function() {
+		$("#id名").simplyScroll();
+	});
+})(jQuery);
+</script>
 <!--<?php
 for($i = 0; $i < 10; $i ++) {
 	echo "<div id=\"gnav\">
@@ -14,20 +24,14 @@ for($i = 0; $i < 10; $i ++) {
 }
 ?>-->
 
-<html class="no-js">
+<html>
 <head>
 <title>Index Page</title>
-<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
-<script src="js/modernizr.custom.17475.js"></script>
-<script type="text/javascript"
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.elastislide.js"></script>
 <div id="ti" class="title">
 	<p>
 		<b>COURSELIST</b>
 	</p>
 </div>
-
 </head>
 <body>
 <?php
@@ -45,11 +49,13 @@ foreach ( $courseList as $course ) {
 	$count = 1;
 	$image = $course ['image'];
 	$name = $course ['courseName'];
+	
 	echo "<div id=\"box\">
 	<ul>
 	<li class=\"box0$count\"><img src=\"$image\" alt=\"$name\"></li>
 	</ul>
 	</div>";
+	
 	$count ++;
 }
 ?>
