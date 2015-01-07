@@ -8,7 +8,7 @@ class MapController extends AppController {
 	public $uses = null;
 	//public $autoLayout;
 	//public $autoRender;
-	public $layout = "Gnav";
+	public $layout = "gnav";
 	// public $helpers = array('GoogleMap'); // Adding the helper
 	
 	public function index() {
@@ -16,23 +16,21 @@ class MapController extends AppController {
 		//$this->autoRender = true;
 		// $this->setAction("other");
 		// $this->redirect("./other");
-		 echo "<html><head></head><body>";
-		 echo "<p></p>";
-		 echo "</body></html>";
+		echo "<html><head></head><body>";
+		echo "<p></p>";
+		echo "</body></html>";
 		//$this->set("title_for_layout","Index Page");
 		
-		 $spotList = array();
-		//spotNameの存在を確認しないとWarningが出るので2回if文を書いてます
-		if(isset($this->data['spotName']))if($this->data['spotName'] != ""){
-			if($this->data['category'] == '0'){
-				$url = MapController::spotQuery($this->data['spotName']);
-			}else{
-				$url = MapController::spotCategoryQuery($this->data['spotName'], $this->data['category']);
-			}
-			$searchResult = MapController::runQuery($url);
-			$spotList = MapController::parse($searchResult);
-		}
+		$spotList = array();
+		$url = MapController::spotAllQuery();
+		$searchResult = MapController::runQuery($url);
+		$spotList = MapController::parse($searchResult);
 		$this->set('spotList',$spotList);
+		
+		//検索ワードをセット
+		if(isset($_POST['spotName'])){
+			$this->set('spotName', $_POST['spotName']);
+		}
 	}
 	
 	public function other() {
@@ -97,6 +95,31 @@ class MapController extends AppController {
     					geo:long ?lng;
 						rdfs:comment ?category;
     					FILTER regex (?spotName,\"".$spotName."\",\"i\").
+ 						}
+				}";
+	
+		$url = 'http://lod.per.c.fun.ac.jp:8000/sparql/?query='.
+				urlencode($query).'&output=json';
+	
+		return $url;
+	}
+	
+	//スポット名をキーとしてスポット名を部分一致で検索するためのurlを生成
+	function spotAllQuery(){
+		$query = "
+				PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+				PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+	
+				SELECT DISTINCT ?spotName ?lat ?lng ?category
+	
+				FROM <file:///var/lib/4store/hakobura_akiba.rdf>
+	
+				WHERE {
+  					GRAPH <file:///var/lib/4store/hakobura_akiba.rdf> {
+   						?a rdfs:label ?spotName;
+    					geo:lat ?lat;
+    					geo:long ?lng;
+						rdfs:comment ?category.
  						}
 				}";
 	
