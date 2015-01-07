@@ -95,6 +95,10 @@ body {
 
 /*GlobalNavigation*/
 #gnav {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 	background: #0092CA;
 	float: left;
 	position: fixed;
@@ -584,15 +588,15 @@ body {
     box-sizing: border-box;
 	margin: auto;
 	padding: 10px 10px 20px 10px;
-	background: #FFFBC6;
-	border-top:2px solid #FFF56B;
+	background: #FFEE7F;
+	box-shadow:0px 0px 3px 0px #FFFBD1;
 	border-radius: 5px 5px 0 0; 
     -webkit-border-radius: 5px 5px 0 0;    /* Safari,Google Chrome用 */
     -moz-border-radius: 5px 5px 0 0;   /* Firefox用 */
 }
 .aboutfooter h2{
 	position: relative;
-	background: #FFBB00;
+	background: #FFAE44;
 	width:400px;
 	height:30px;
 	padding: 2px 5px 2px 5px;
@@ -617,7 +621,7 @@ body {
 .aboutfooter h2:before{
 	top: 0;
 	left: 100%;
-	border: solid #FFBB00;
+	border: solid #FFAE44;
 	content: " "; 
 	height: 0; 
 	width: 0; 
